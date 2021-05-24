@@ -55,7 +55,7 @@ h1, h2, h3, h4 {
     background-color: var(--oxford-blue);
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid #f4f4f427;
-    position: fixed;
+    position: sticky;
     height: 80px;
     width: 100%;
     top: 0;
@@ -84,26 +84,31 @@ h1, h2, h3, h4 {
 }
 
 #about .content {
-    margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 50%;
-    padding: 0 40px;
+    background-image: linear-gradient(to left, var(--medium-slate-blue), var(--oxford-blue));
+    height: 60%;
+    padding: 40px;
     line-height: 1.1;
+}
+
+.content h1, .content p {
+    opacity: 0.7;
 }
 
 .content h1 {
     font-weight: 300;
+    font-size: 1.2rem;
 }
 
 .content h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .content p {
     font-weight: 100;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 img {
