@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&family=Montserrat:wght@200;900&family=Raleway:wght@100;300;600&family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800&display=swap');
 
 :root {
     --medium-slate-blue: #7360ff;
@@ -20,11 +20,12 @@
 body {
     background-color: var(--oxford-blue);
     color: #fff;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 p {
     margin: 10px 0;
+    font-weight: 300;
 }
 
 ul {
@@ -37,14 +38,12 @@ a {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 /* Utilities */
 .text-primary {
-    color: var(--medium-slate-blue);
-    font-size: larger;
+    color: var(--queen-blue);
 }
 
 /* Navbar */
@@ -54,6 +53,7 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: space-around;
     background-color: var(--oxford-blue);
+    font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid #f4f4f427;
     position: fixed;
     height: 80px;
@@ -75,4 +75,37 @@ h1, h2, h3, h4 {
 #navbar .logo a {
     margin-left: 30px;
     font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* About */
+#about {
+    height: 100vh;
+}
+
+#about .content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    padding: 0 40px;
+    line-height: 1.1;
+}
+
+.content h1 {
+    font-weight: 300;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-weight: 100;
+    font-size: 1.3rem;
+}
+
+img {
+    width: 300px;
 }
