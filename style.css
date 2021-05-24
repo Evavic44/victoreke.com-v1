@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;800&family=Montserrat:wght@200;900&family=Raleway:wght@100;300;600&family=Ubuntu:wght@300;500;700&display=swap');
+
+:root {
+    --medium-slate-blue: #7360ff;
+    --oxford-blue: #040f25;
+    --queen-blue: #4c6ca0;
+    --baby-blue-eyes: #a3cef1;
+    --alice-blue: #e7ecef;
+    --jet: #333333;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main  */
+body {
+    background-color: var(--oxford-blue);
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+/* Utilities */
+.text-primary {
+    color: var(--medium-slate-blue);
+    font-size: larger;
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--oxford-blue);
+    border-bottom: 1px solid #f4f4f427;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    padding: 20px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li a {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0 30px;
+}
+
+#navbar .logo a {
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
