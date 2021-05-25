@@ -70,11 +70,18 @@ h1, h2, h3, h4 {
     background-color: #fff;
 }
 
-.align {
+.head-text {
     text-align: center;
     margin: 30px 0 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
+}
+
+.head-text-2 {
+    line-height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #7b8286;
 }
 
 /* Navbar */
@@ -114,7 +121,7 @@ h1, h2, h3, h4 {
 /* About */
 .about {
     height: 100vh;
-    padding-top: 50px;
+    padding: 30px 0 50px;
 }
 
 .about .about-stats {
@@ -133,15 +140,16 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 85%;
     left: -70px;
-    background-image: linear-gradient(to left, var(--medium-slate-blue), var(--oxford-blue));
+    background-image: linear-gradient(to bottom, var(--medium-slate-blue), #9c138f);
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    opacity: 0.8;
 }
 
 .about-stats h1, .about-stats p {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .about-stats h2 {
@@ -156,6 +164,7 @@ img {
 .bio {
     height: 40%;
     position: relative;
+    margin: 0 15px;
 }
 
 .about-profile {
@@ -165,10 +174,29 @@ img {
     justify-content: center;
     text-align: center;
     margin: 10px auto 0;
-    max-width: 1000px;
-    padding: 20px;
+    max-width: 900px;
+    padding: 30px 20px;
 }
 
-.about-profile p {
-    font-weight: 500;
+/* Skills */
+.technologies .stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--alice-blue);
+    margin: auto;
+}
+
+.technologies h1 {
+    margin-bottom: 50px;
+}
+
+.stack > div {
+    margin: 20px
+}
+
+.stack span {
+    margin: 0 30px;
+    font-size: 2rem;
 }
