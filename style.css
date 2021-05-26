@@ -63,7 +63,7 @@ h1, h2, h3, h4 {
 }
 
 .bg-secondary, .underline-secondary {
-    background-color: var(--oxford-blue);
+    background-color: var(--medium-slate-blue);
 }
 
 .underline-light {
@@ -73,7 +73,8 @@ h1, h2, h3, h4 {
 .head-text {
     text-align: center;
     margin: 30px 0 10px;
-    font-size: 1rem;
+    font-size: 0.85rem;
+    color: var(--medium-slate-blue);
     font-weight: 600;
 }
 
@@ -91,7 +92,6 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    color: var(--oxford-blue);
     position: fixed;
     height: 70px;
     width: 100%;
@@ -105,6 +105,8 @@ h1, h2, h3, h4 {
 #navbar ul li a {
     font-size: 1rem;
     font-weight: 600;
+    opacity: 0.87;
+    color: var(--medium-slate-blue);
     margin: 0 30px;
 }
 
@@ -131,7 +133,7 @@ h1, h2, h3, h4 {
     background-image: linear-gradient(to left, var(--medium-slate-blue), #9c138f);
     color: #fff;
     height: 60%;
-    padding: 40px;
+    padding: 60px 20px 10px;
     line-height: 1.1;
 }
 
@@ -186,6 +188,7 @@ img {
     text-align: center;
     background: var(--alice-blue);
     margin: auto;
+    height: 100px;
 }
 
 .technologies h1 {
