@@ -35,7 +35,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--oxford-blue);
+    color: var(--medium-slate-blue);
 }
 
 h1, h2, h3, h4 {
@@ -93,16 +93,17 @@ h1, h2, h3, h4 {
     border: 1px solid #fff;
     border-radius: 2px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
     color: #9c138f;
     background-color: #fff;
-    border-color: #9c138f;
+    border: 1px solid #fff;
 }
 
 .btn-primary {
-    background-color: #9a1794;
+    background-color: #9c138f;
     color: #fff;
     border-color: #fff;
 }
@@ -137,11 +138,15 @@ h1, h2, h3, h4 {
 }
 
 #navbar ul li a {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    opacity: 0.87;
-    color: var(--medium-slate-blue);
+    opacity: 0.8;
     margin: 0 30px;
+    transition: color 0.3s ease-in-out;
+}
+
+#navbar ul li a:hover {
+    opacity: 1;
 }
 
 #navbar .logo a {
@@ -152,6 +157,11 @@ h1, h2, h3, h4 {
     width: 50px;
     border-radius: 50%;
     margin-top: 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#navbar .logo img:hover {
+    opacity: 0.8;
 }
 
 /* About */
@@ -176,7 +186,7 @@ h1, h2, h3, h4 {
     position: absolute;
     top: 85%;
     left: -70px;
-    background-image: linear-gradient(to bottom, var(--medium-slate-blue), #9c138f);
+    background: linear-gradient(to bottom, var(--medium-slate-blue), #9c138f);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -184,7 +194,8 @@ h1, h2, h3, h4 {
 }
 
 .about-stats .btn {
-
+    font-size: 0.8rem;
+    font-weight: 400;   
 }
 
 .about-stats h1, .about-stats p {
@@ -193,7 +204,7 @@ h1, h2, h3, h4 {
 }
 
 .about-stats h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 img {
