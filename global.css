@@ -4,7 +4,9 @@
 }
 
 .text-secondary {
-    color: var(--oxford-blue);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .underline {
@@ -26,6 +28,7 @@
     background-color: #fff;
 }
 
+/* Title text */
 .head-text {
     text-align: center;
     margin: 30px 0;
@@ -34,13 +37,13 @@
     font-weight: 600;
 }
 
-.head-text-2 {
-    line-height: 18px;
+.head-paragraph {
     font-weight: 400;
-    font-size: 14px;
-    color: #7b8286;
+    font-size: 0.97rem;
+    color: var(--secondary-color);
 }
 
+/* Buttons */
 .btn {
     display: inline-block;
     background-color: inherit;
@@ -84,3 +87,11 @@
     margin: 0 30px;
     padding: 12px 10px;
 }
+
+.flex-items {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Responive */

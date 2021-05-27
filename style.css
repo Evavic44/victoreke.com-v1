@@ -8,6 +8,7 @@
     --alice-blue: #e7ecef;
     --jet: #333333;
     --primary-color: #9c138f;
+    --secondary-color: #747a7e;
 }
 
 /* Reset */
@@ -20,7 +21,7 @@
 /* Main  */
 body {
     background-color: #fff;
-    color: var(--oxford-blue);
+    color: var(--secondary-color);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -180,4 +181,18 @@ img {
     background-color: var(--medium-slate-blue);
     color: #fff;
     border-color: #fff;
+}
+
+.flex .row {
+    text-align: left;
+    color: var(--secondary-color);
+}
+
+.flex .row .column {
+    padding: 20px;
+    margin: 20px;
+}
+
+.flex .row .column span {
+    color: var(--medium-slate-blue)
 }
