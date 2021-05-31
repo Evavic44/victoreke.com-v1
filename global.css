@@ -1,32 +1,35 @@
 /* Utilities */
 .text-primary {
-    color: var(--queen-blue);
+    color: var(--medium-slate-blue);
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .text-secondary {
-    color: var(--secondary-color);
+    color: #fff;
     font-weight: 700;
     font-size: 1.3rem;
 }
 
 .underline {
     display: inline-block;
-    width: 60px;
+    width: 50px;
     height: 1px;
     margin: 0 10px 0;
 }
 
+.underline-light {
+    background-color: #fff;
+}
+
 .bg-primary, .underline-primary {
-    background-color: var(--queen-blue);
+    background-color: var(--primary-color);
 }
 
 .bg-secondary, .underline-secondary {
     background-color: var(--medium-slate-blue);
 }
 
-.underline-light {
-    background-color: #fff;
-}
 
 /* Title text */
 .head-text {
@@ -37,46 +40,26 @@
     font-weight: 600;
 }
 
-.head-paragraph {
-    font-weight: 400;
-    font-size: 0.97rem;
-    color: var(--secondary-color);
-}
-
 /* Buttons */
 .btn {
     display: inline-block;
-    background-color: inherit;
+    background-color: var(--medium-slate-blue);
     color: #fff;
-    padding: 15px 20px;
-    border: 1px solid #fff;
-    border-radius: 2px;
+    padding: 1.125rem 1.75rem;
+    border-radius: 1px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
-    color: var(--primary-color);
     background-color: #fff;
-    border: 1px solid #fff;
+    color: var(--medium-slate-blue);
 }
 
 .btn-primary {
     background-color: var(--primary-color);
     color: #fff;
-    border-color: #fff;
-}
-
-.btn-secondary {
-    background-color: inherit;
-    color: var(--oxford-blue);
-    border-color: var(--oxford-blue);
-}
-
-.btn-secondary-hover {
-    background-color: var(--oxford-blue);
-    color: inherit;
-    border-color: var(--oxford-blue);
+    border-color: var(--primary-color);
 }
 
 .icons span {
@@ -88,10 +71,19 @@
     padding: 12px 10px;
 }
 
-.flex-items {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1200px;
+/* Animation */
+.animation {
+    animation: anime 0.7s 1 forwards cubic-bezier(1, 1, 1, 1);
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(40px) translateY(20px) rotate(260deg);
+    }
+    
+    to {
+        transform: translateX(0) translateY(0) rotate(0);
+    }
 }
 
 /* Responive */
