@@ -93,6 +93,7 @@ h1, h2, h3, h4 {
 /* Hero section */
 #hero {
     height: 100vh;
+    overflow: hidden;
 }
 
 #hero .content {
@@ -130,8 +131,31 @@ h1, h2, h3, h4 {
 }
 
 .content .content-image,
-.content .content-image .overlay-icons{
+.content .content-image .overlay-icons {
     position: relative;
+    transition: all 0.5s ease-in-out;
+    animation: anime-2 2s 1 forwards cubic-bezier(0.1, 0.5, 0.07, 1);
+}
+
+/* Hero Animation */
+@keyframes anime-2 {
+    0% {
+        transform: rotate(90deg);
+        z-index: 0
+    }
+
+    20% {z-index: 0;}
+    40% {z-index: 0;}
+    50% {z-index: 0;}
+    55% {z-index: 1;}
+    60% {z-index: 1;}
+    80% {z-index: 1;}
+    80% {z-index: 1;}
+    
+    100% {
+        transform: rotate(0);
+        z-index: 1;
+    }
 }
 
 .content .content-image::before {
@@ -160,13 +184,12 @@ h1, h2, h3, h4 {
 .content .content-image .overlay-icons::after {
     content: '';
     position: absolute;
-    bottom: -12px;
-    right: 50px;
+    bottom: -35px;
+    right: 18px;
     width: 60px;
     height: 60px;
     background-image: url(./img/icons8-css3.svg);
     background-repeat: no-repeat; 
-    z-index: 1;
 }
 
 /* About */
