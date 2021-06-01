@@ -1,14 +1,12 @@
 /* Utilities */
 .text-primary {
     color: var(--medium-slate-blue);
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .text-secondary {
     color: #fff;
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .underline {
@@ -35,7 +33,8 @@
 .head-text {
     text-align: center;
     margin: 30px 0;
-    font-size: 0.85rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
     color: var(--medium-slate-blue);
     font-weight: 600;
 }
@@ -46,14 +45,16 @@
     background-color: var(--medium-slate-blue);
     color: #fff;
     padding: 1.125rem 1.75rem;
+    border-bottom: 2px solid var(--medium-slate-blue);
     border-radius: 1px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
-    background-color: var(--primary-color);
-    color: #fff;
+    border-bottom: 2px solid var(--medium-slate-blue);
+    background-color: #fff;
+    color: var(--medium-slate-blue);
 }
 
 .btn-primary {
@@ -87,3 +88,27 @@
 }
 
 /* Responive */
+.Xlarge-screen {
+    max-width: 2500px;
+    margin: 0 auto;
+}
+
+.large-screen {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.med-screen {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.small-screen {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.mobile {
+    margin: 0 auto;
+    max-width: fit-content;
+}
