@@ -121,6 +121,54 @@ h1, h2, h3, h4 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.content .content-image img {
+    /* display: block; */
+    border: 1px solid #333;
+    padding: 30px;
+    border-radius: 50%;
+    transform: translateY(-40px);
+}
+
+.content .content-image,
+.content .content-image .overlay-icons{
+    position: relative;
+}
+
+.content .content-image::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    background-image: url(./img/icons8-html-5.svg);
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+
+.content .content-image::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 32%;
+    background-image: url(./img/icons8-javascript.svg);
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+}
+
+.content .content-image .overlay-icons::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    background-image: url(./img/icons8-css3.svg);
+    background-repeat: no-repeat; 
+    z-index: 1;
+}
+
 /* About */
 #about {
     height: 100vh;

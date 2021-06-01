@@ -52,8 +52,8 @@
 }
 
 .btn:hover {
-    background-color: #fff;
-    color: var(--medium-slate-blue);
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
 .btn-primary {
@@ -78,11 +78,11 @@
 
 @keyframes anime {
     from {
-        transform: translateX(40px) translateY(20px) rotate(260deg);
+        transform: translateY(10px) translateX(10px);
     }
     
     to {
-        transform: translateX(0) translateY(0) rotate(0);
+        transform: translateY(0) translateX(0);
     }
 }
 
