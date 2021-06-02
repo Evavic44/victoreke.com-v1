@@ -113,6 +113,7 @@ h1, h2, h3, h4 {
     justify-content: space-between;
     padding: 30px;
     height: 550px;
+    position: relative;
 }
 
 .content h1 {
@@ -140,7 +141,6 @@ h1, h2, h3, h4 {
 
 /* Hero image */
 .content .content-image img {
-    /* display: block; */
     border: 1px solid #333;
     padding: 30px;
     border-radius: 50%;
@@ -231,11 +231,12 @@ main::after {
 
 /* About */
 #about {
-    height: 100vh;
+    height: 100%;
     padding-top: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
     padding: 0 30px 30px;
+    margin-bottom: 60px;
 }
 
 .bio {
@@ -243,10 +244,9 @@ main::after {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    color: var(--secondary-color);
     text-align: center;
-    border: 1px solid #333;
-    border-radius: 30px;
+    border: 1px solid var(--jet);
+    border-radius: 5px;
     background-color: #0a0a0a;
     padding: 20px;
     margin-bottom: 50px;
@@ -277,15 +277,35 @@ main::after {
 }
 
 .bio-stats p {
-    font-weight: 400;
+    font-weight: 300;
+    font-size: 1.02rem;
     text-align: center;
     line-height: 1.4;
-    color: var(--secondary-color);
 }
 
 .bio-stats p span {
     margin: 5px;
 }
+
+/* Skills Section */
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid var(--jet);
+    background-color: #0a0a0a;
+}
+
+.skills .column {
+    padding: 20px;
+}
+
+/* Technology Section */
+/* #technologies {
+    height: 100px;
+    background-color: var(--medium-slate-blue);
+} */
 
 /*
 .about-profile {
