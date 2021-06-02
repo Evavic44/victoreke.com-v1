@@ -246,7 +246,7 @@ main::after {
     justify-content: space-around;
     text-align: center;
     border: 1px solid var(--jet);
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: #0a0a0a;
     padding: 20px;
     margin-bottom: 50px;
@@ -294,6 +294,7 @@ main::after {
     justify-content: center;
     padding: 20px;
     border: 1px solid var(--jet);
+    border-radius: 20px;
     background-color: #0a0a0a;
 }
 
@@ -302,10 +303,25 @@ main::after {
 }
 
 /* Technology Section */
-/* #technologies {
-    height: 100px;
-    background-color: var(--medium-slate-blue);
-} */
+#technologies {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    height: 200px;
+}
+
+#technologies div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    text-align: center;
+}
+
 
 /*
 .about-profile {
