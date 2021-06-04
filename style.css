@@ -105,7 +105,7 @@ h1, h2, h3, h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px 30px 40px;
     height: 550px;
     position: relative;
 }
@@ -145,7 +145,7 @@ h1, h2, h3, h4 {
 .content .content-image {
     position: relative;
     transition: all 0.5s ease-in-out;
-    animation: anime-2 1.5s 6 alternate-reverse forwards ease-in-out;
+    animation: anime-2 1.5s 4 alternate-reverse forwards ease-in-out;
 }
 
 .overlay-icons {
@@ -194,7 +194,7 @@ h1, h2, h3, h4 {
 main::after {
     content: '';
     position: absolute;
-    top: 130px;
+    top: 90px;
     left: -100px;
     background-color: var(--medium-slate-blue);
     width: 300px;
