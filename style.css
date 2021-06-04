@@ -142,10 +142,15 @@ h1, h2, h3, h4 {
 }
 
 .content .content-image,
-.content .content-image .overlay-icons {
+.content .content-image {
     position: relative;
     transition: all 0.5s ease-in-out;
     animation: anime-2 1.5s 6 alternate-reverse forwards ease-in-out;
+}
+
+.overlay-icons {
+    position: relative;
+    z-index: 1;
 }
 
 /* Hero html icon*/
