@@ -28,12 +28,6 @@
     background-color: var(--medium-slate-blue);
 }
 
-/* Animation */
-.bounce-in-right {
-	-webkit-animation: bounce-in-right 1.1s both;
-	animation: bounce-in-right 1.1s both;
-}
-
 /* Title text */
 .head-text {
     text-align: center;
@@ -115,7 +109,6 @@
         z-index: 1;
     }
 }
-
 
 /* Underline From Center */
 .hvr-underline-from-center {
