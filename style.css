@@ -284,7 +284,7 @@ main::after {
     justify-content: center;
     text-align: center;
     margin: 20px;
-    height: 200px;
+    height: 300px;
 }
 
 #technologies div {
@@ -295,7 +295,6 @@ main::after {
     padding: 30px;
     text-align: center;
 }
-
 
 /*
 .about-profile {
