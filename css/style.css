@@ -35,7 +35,7 @@ body {
 }
 
 img {
-   width: 300px;
+   width: 100%;
 }
 
 p {
@@ -135,17 +135,11 @@ h1, h2, h3, h4 {
 
 /* Hero image */
 .content .content-image img {
+   width: 300px;
    border: 1px solid #333;
-   padding: 30px;
    border-radius: 50%;
+   padding: 30px;
    transform: translateY(-40px);
-}
-
-.content .content-image,
-.content .content-image {
-   position: relative;
-   transition: all 0.5s ease-in-out;
-   animation: anime-2 1.5s 4 alternate-reverse forwards ease-in-out;
 }
 
 .overlay-icons {
@@ -159,7 +153,7 @@ h1, h2, h3, h4 {
    position: absolute;
    top: 50px;
    left: -20px;
-   background-image: url(./img/icons8-html-5.svg);
+   background-image: url(../img/icons8-html-5.svg);
    background-repeat: no-repeat;
    width: 60px;
    height: 60px;
@@ -172,7 +166,7 @@ h1, h2, h3, h4 {
    position: absolute;
    bottom: -20px;
    right: 32%;
-   background-image: url(./img/icons8-javascript.svg);
+   background-image: url(../img/icons8-javascript.svg);
    background-repeat: no-repeat;
    width: 90px;
    height: 90px;
@@ -186,7 +180,7 @@ h1, h2, h3, h4 {
    right: 18px;
    width: 60px;
    height: 60px;
-   background-image: url(./img/icons8-css3.svg);
+   background-image: url(../img/icons8-css3.svg);
    background-repeat: no-repeat; 
 }
 
@@ -300,7 +294,13 @@ main::after {
 .project-container {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
+   /* grid-gap: 1rem; */
 }
+
+/* .project-container .project {
+   border: 1px solid #333;
+   padding: 2rem;
+} */
 
 
 /*
