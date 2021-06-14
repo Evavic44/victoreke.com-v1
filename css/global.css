@@ -1,4 +1,10 @@
 /* Utilities */
+.container {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 1rem;
+}
+
 .text-primary {
    color: var(--medium-slate-blue);
    font-weight: 600;
@@ -77,6 +83,22 @@
 .icons span:hover {
    border: 1px solid #fff;
    color: #fff;
+}
+
+/* Cards */
+.card {
+   border: 1px solid #333;
+   padding: 1.5rem 1rem;
+   transition: all 0.4s ease-in-out;
+   background: #0a0a0a;
+   border-radius: 10px;
+}
+
+.card:hover {
+   border: 1px solid #fff;
+   background: var(--total-dark);
+   color: #fff;
+   transform: scale(1.02);
 }
 
 /* 
@@ -286,29 +308,3 @@
    -------- Animation Ends Here -----------
    ==========================================
 */
-
-/* Responive */
-.Xlarge-screen {
-   max-width: 2500px;
-   margin: 0 auto;
-}
-
-.large-screen {
-   margin: 0 auto;
-   max-width: 1200px;
-}
-
-.med-screen {
-   margin: 0 auto;
-   max-width: 1000px;
-}
-
-.small-screen {
-   margin: 0 auto;
-   max-width: 600px;
-}
-
-.mobile {
-   margin: 0 auto;
-   max-width: fit-content;
-}
