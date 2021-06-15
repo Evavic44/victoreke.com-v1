@@ -311,25 +311,37 @@ main::after {
    flex-direction: column;
 }
 
-.project-container .card .icon-header {
+.project-container .icon-header {
    align-self: flex-end;
-   margin-bottom: 1.5rem;
+   margin-bottom: 1rem;
 }
 
-.project-container .card .icon-header a {
+.project-container .icon-header a {
+   color: var(--jet);
    margin-left: 0.7rem;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
 }
 
-.project-container .card .icon-header a:hover {
+.project-container .icon-header a:hover {
    color: var(--medium-slate-blue);
 }
 
 .project-container header {
-   text-align: center;
    line-height: 1.7;
+   margin-bottom: 1.5rem;
 }
 
 .project-container header h3 {
    color: var(--medium-slate-blue);
 }
+
+.project-container ul {
+   display: flex;
+}
+
+.project-container li {
+   margin-right: 0.5rem;
+   font-size: 0.8rem;
+   color: var(--jet);
+} 
+
