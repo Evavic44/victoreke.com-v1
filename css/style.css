@@ -105,13 +105,12 @@ h1, h2, h3, h4 {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   padding: 20px 30px 40px;
-   height: 550px;
+   padding: 0 30px 40px;
+   height: 100%;
    position: relative;
 }
 
 .content h1 {
-   color: linear-gradient(to left, var(--medium-slate-blue), var(--primary-color));
    font-size: 1.1rem;
 }
 
@@ -136,7 +135,7 @@ h1, h2, h3, h4 {
 /* Hero image */
 .content .content-image img {
    width: 300px;
-   border: 1px solid #333;
+   border: 1px solid var(--jet);
    border-radius: 50%;
    padding: 30px;
    transform: translateY(-40px);
@@ -268,26 +267,6 @@ main::after {
 
 .skills .column {
    padding: 20px;
-}
-
-/* Technology Section */
-#technologies {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-   margin: 20px;
-   height: 300px;
-}
-
-#technologies div {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap;
-   padding: 30px;
-   text-align: center;
 }
 
 /* Projects */
