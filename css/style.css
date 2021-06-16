@@ -294,7 +294,7 @@ main::after {
 }
 
 .project-container .icon-header a {
-   color: var(--jet);
+   color: #555;
    margin-left: 0.7rem;
    font-size: 1.1rem;
 }
@@ -319,6 +319,6 @@ main::after {
 .project-container li {
    margin-right: 0.5rem;
    font-size: 0.8rem;
-   color: var(--jet);
+   color: var(--medium-slate-blue);
 } 
 
