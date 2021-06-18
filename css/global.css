@@ -11,8 +11,9 @@
 }
 
 .text-secondary {
-   color: #fff;
-   font-weight: 600;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   font-size: 3rem; 
 }
 
 .underline {
@@ -68,9 +69,9 @@
    border-color: var(--primary-color);
 }
 
-.icons span {
+.icons a, .icons span {
    font-size: 1.6rem;
-   margin: 15px 30px;
+   margin: 10px 30px;
    padding: 12px 10px;
    width: 50px;
    height: 50px;
@@ -80,7 +81,7 @@
    transition: all 0.3s ease-in-out; 
 }
 
-.icons span:hover {
+.icons span:hover, .icons a:hover {
    border: 1px solid #fff;
    color: #fff;
 }
@@ -105,20 +106,10 @@
 .icons-container {
    display: flex;
    align-items: center;
-   flex-direction: row;
    justify-content: center;
    text-align: center;
    padding: 1.5rem;
 }
-
-.icons {
-   text-align: center;
-}
-
-.icons > * {
-   margin: 0 0.526rem;
-}
-
 /* 
    ====================================
    ------- Animation starts here ------
