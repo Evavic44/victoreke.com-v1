@@ -383,4 +383,6 @@ main::after {
    background-color: var(--medium-slate-blue);
    color: #fff;
    font-size: 1rem;
+   transition: all 0.4s ease-in-out;
+   font-weight: 700;
 }
