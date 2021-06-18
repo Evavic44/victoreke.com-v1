@@ -51,22 +51,14 @@
    background-color: var(--medium-slate-blue);
    color: #fff;
    padding: 1.125rem 1.75rem;
-   border-bottom: 2px solid var(--medium-slate-blue);
    border-radius: 1px;
    cursor: pointer;
    transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
-   border-bottom: 2px solid var(--medium-slate-blue);
    background-color: #fff;
    color: var(--medium-slate-blue);
-}
-
-.btn-primary {
-   background-color: var(--primary-color);
-   color: #fff;
-   border-color: var(--primary-color);
 }
 
 .icons a, .icons span {
