@@ -6,7 +6,7 @@
 }
 
 .text-primary {
-   color: var(--medium-slate-blue);
+   color: var(--primary-color);
    font-weight: 600;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .bg-secondary, .underline-secondary {
-   background-color: var(--medium-slate-blue);
+   background-color: var(--primary-color);
 }
 
 /* Title text */
@@ -41,14 +41,14 @@
    margin: 30px 0;
    font-size: 1rem;
    font-family: 'Montserrat', sans-serif;
-   color: var(--medium-slate-blue);
+   color: var(--primary-color);
    font-weight: 600;
 }
 
 /* Buttons */
 .btn {
    display: inline-block;
-   background-color: var(--medium-slate-blue);
+   background-color: var(--primary-color);
    color: #fff;
    padding: 1.125rem 1.75rem;
    border-radius: 1px;
@@ -58,7 +58,7 @@
 
 .btn:hover {
    background-color: #fff;
-   color: var(--medium-slate-blue);
+   color: var(--primary-color);
 }
 
 .icons a, .icons span {
@@ -67,9 +67,9 @@
    padding: 12px 10px;
    width: 50px;
    height: 50px;
-   border: 1px solid var(--medium-slate-blue);
+   border: 1px solid var(--primary-color);
    border-radius: 50%;
-   color: var(--medium-slate-blue);
+   color: var(--primary-color);
    transition: all 0.3s ease-in-out; 
 }
 
@@ -82,7 +82,7 @@
 .card {
    padding: 1.5rem;
    transition: all 0.3s ease-in-out;
-   background: #0a0a0a;
+   background: var(--bg-secondary);
    border-radius: 3px;
 }
 
@@ -142,7 +142,7 @@
    left: 51%;
    right: 51%;
    bottom: 0;
-   background: var(--medium-slate-blue);
+   background: var(--primary-color);
    height: 1px;
    -webkit-transition-property: left, right;
    transition-property: left, right;
