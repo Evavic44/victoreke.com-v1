@@ -64,6 +64,7 @@ h1, h2, h3, h4 {
    justify-content: space-around;
    width: 100%;
    padding: 20px;
+   position: fixed;
 }
 
 .navbar ul {
@@ -382,7 +383,39 @@ main::after {
 .form-group .btn {
    background-color: var(--medium-slate-blue);
    color: #fff;
-   font-size: 1rem;
    transition: all 0.4s ease-in-out;
-   font-weight: 700;
+   font-size: 0.8rem;
+   font-weight: 600;
+}
+
+/* Footer */
+#footer .footer-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: #0a0a0a;
+   padding: 1rem 2rem;
+}
+
+#footer .footer-container .btn {
+   padding: 0.3rem 0.5rem;
+   justify-self: flex-end;
+}
+
+#footer .footer-container .icons a {
+   font-size: 1rem;
+   margin: 0 5px;
+   padding: 10px;
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   transition: all 0.3s ease-in-out; 
+}
+
+#footer .footer-container p {
+   text-align: center;
+   font-size: 0.8rem;
+   font-weight: 600;
+   /* transform: translateX(calc(100% - 350px)); */
+   transform: translateX(-37%);
 }
