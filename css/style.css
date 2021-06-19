@@ -86,7 +86,6 @@ h1, h2, h3, h4 {
 
 .navbar .logo {
    transition: all 0.3s ease-in-out;
-   opacity: 0.85;
 }
 
 .navbar .logo:hover {
