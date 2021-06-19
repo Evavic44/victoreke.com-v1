@@ -64,7 +64,6 @@ h1, h2, h3, h4 {
    justify-content: space-around;
    width: 100%;
    padding: 20px;
-   position: fixed;
 }
 
 .navbar ul {
@@ -208,8 +207,7 @@ main::after {
    align-items: center;
    justify-content: space-around;
    text-align: center;
-   border: 1px solid var(--jet);
-   border-radius: 20px;
+   border-radius: 3px;
    background-color: #0a0a0a;
    padding: 20px;
    margin-bottom: 50px;
@@ -256,8 +254,7 @@ main::after {
    align-items: center;
    justify-content: center;
    padding: 20px;
-   border: 1px solid var(--jet);
-   border-radius: 20px;
+   border-radius: 3px;
    background-color: #0a0a0a;
 }
 
@@ -307,7 +304,7 @@ main::after {
 }
 
 .project-container header h3 {
-   color: var(--medium-slate-blue);
+   color: #fff;
 }
 
 .project-container ul {

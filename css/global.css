@@ -80,17 +80,14 @@
 
 /* Cards */
 .card {
-   border: 1px solid #333;
    padding: 1.5rem;
-   transition: all 0.4s ease-in-out;
+   transition: all 0.3s ease-in-out;
    background: #0a0a0a;
-   border-radius: 10px;
+   border-radius: 3px;
 }
 
 .card:hover {
-   border: 1px solid #fff;
-   background: var(--total-dark);
-   color: #fff;
+   background: #111;
    transform: translateY(-4px);
 }
 
