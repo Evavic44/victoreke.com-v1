@@ -80,6 +80,8 @@
 
 /* Cards */
 .card {
+   display: flex;
+   flex-direction: column;
    padding: 1.5rem;
    transition: all 0.3s ease-in-out;
    background: var(--bg-secondary);
@@ -87,7 +89,7 @@
 }
 
 .card:hover {
-   background: #111;
+   background: var(--jet);
    transform: translateY(-4px);
 }
 

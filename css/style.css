@@ -4,12 +4,9 @@
    /* Color code */
    --primary-color: #7360ff;
    --bg-primary: #000;
-   --secondary-color: #aaa;
-   --bg-secondary: #0a0a0a;
-   --oxford-blue: #040f25;
+   --secondary-color: #7a7a7a;
+   --bg-secondary: #111;
    --queen-blue: #4c6ca0;
-   --baby-blue-eyes: #a3cef1;
-   --alice-blue: #e7ecef;
    --jet: #333333;
    
    /* Resolutions */
@@ -277,24 +274,19 @@ main::after {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.project-container .card {
-   display: flex;
-   flex-direction: column;
-}
-
 .project-container .icon-header {
    align-self: flex-end;
    margin-bottom: 1rem;
 }
 
 .project-container .icon-header a {
-   color: #555;
+   color: var(--secondary-color);
    margin-left: 0.7rem;
    font-size: 1.1rem;
 }
 
 .project-container .icon-header a:hover {
-   color: var(--primary-color);
+   color: #fff;
 }
 
 .project-container header {
@@ -362,7 +354,7 @@ main::after {
 .form-group input, .form-group textarea, .form-group button {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: var(--jet);
-   color: var(--secondary-color);
+   color: #fff;
    width: 100%;
    padding: 1rem;
    border: 1px solid var(--jet);
@@ -373,7 +365,8 @@ main::after {
 
 .form-group input:focus, 
 .form-group textarea:focus {
-   border-bottom: 1px solid var(--primary-color);
+   border: 1px solid var(--primary-color);
+   background-color: var(--bg-secondary);
 } 
 
 .form-group .btn {
@@ -412,6 +405,5 @@ main::after {
    text-align: center;
    font-size: 0.8rem;
    font-weight: 600;
-   /* transform: translateX(calc(100% - 350px)); */
    transform: translateX(-37%);
 }
