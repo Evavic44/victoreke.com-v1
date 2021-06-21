@@ -93,11 +93,6 @@
    border-radius: 3px;
 }
 
-.card:hover {
-   background: var(--jet);
-   transform: translateY(-4px);
-}
-
 /* Icons */
 .icons-container {
    display: flex;
