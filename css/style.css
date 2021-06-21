@@ -115,7 +115,7 @@ h1, h2, h3, h4 {
 .content p {
    margin: 0.9rem 0 2rem;
    color: var(--secondary-color);
-   font-weight: 600;
+   font-weight: 500;
 }
 
 .content .btn {
@@ -192,9 +192,12 @@ main::after {
    height: 100%;
    padding-top: 20px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   position: relative;
-   padding: 0 30px 30px;
    margin-bottom: 60px;
+}
+
+.about {
+   background-color: var(--bg-secondary);
+   padding: 1rem;
 }
 
 .bio {
@@ -203,14 +206,6 @@ main::after {
    align-items: center;
    justify-content: space-around;
    text-align: center;
-   border-radius: 3px;
-   background-color: var(--bg-secondary);
-   padding: 20px;
-   margin-bottom: 50px;
-}
-
-.bio .experience {
-   width: 140px;
 }
 
 .bio .experience h1 {
@@ -220,11 +215,13 @@ main::after {
 
 .bio .experience p {
    font-weight: 700;
+   font-size: 0.85rem;
+   max-width: 150px;
+   margin: 0 auto 20px;
    color: #fff;
 }
 
 .bio-stats {
-   margin-top: 20px;
    width: 600px;
    font-size: 1.07rem;
    font-weight: 600;
@@ -249,9 +246,7 @@ main::after {
    display: flex;
    align-items: center;
    justify-content: center;
-   padding: 20px;
-   border-radius: 3px;
-   background-color: var(--bg-secondary);
+   padding: 40px 20px 0;
 }
 
 .skills .column {
