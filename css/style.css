@@ -242,11 +242,46 @@ main::after {
 }
 
 /* Skills Section */
+#skills {
+   padding: 2rem;
+   margin-top: 3rem;
+}
+
 .skills {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 40px 20px 0;
+   display: grid;
+   grid-template-columns: 2fr 3fr;
+   grid-gap: 1rem;
+}
+
+.skills .box-header {
+   align-self: center;
+   padding: 1rem;
+}
+
+.skills .box-header h4 {
+   text-align: left;
+   margin-bottom: 0.5rem;
+   text-transform: uppercase;
+}
+
+.skills .box-header h3 {
+   font-size: 1.7rem;
+}
+
+.skills .box-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-gap: 1rem;
+   justify-self: center;
+}
+
+.box-container span {
+   margin-bottom: 0.8rem;
+   font-size: 1.1rem;
+}
+
+.box-container h3 {
+   font-size: 1rem;
 }
 
 /* Projects */
