@@ -2,18 +2,18 @@
 
 :root {
    /* Color code */
-   --primary-color: #7360ff;
-   --bg-primary: #000;
    --secondary-color: #7a7a7a;
-   --bg-secondary: #111;
+   --primary-color: #7360ff;
    --queen-blue: #4c6ca0;
-   --jet: #333333;
-   
-   /* Resolutions */
-   --xl-screen: 2000px;
-   --lg-screen: 1200px; 
-   --med-screen: 768px; 
-   --sml-screen: 500px; 
+   --bg-secondary: #111;
+   --bg-primary: #000;
+   --jet: #333333; 
+
+   /* Icons */
+   --color-1: #e65100;
+   --color-2: #8a2be2;
+   --color-3: #0277bd;
+   --color-4: #ffd600;
 }
 
 /* Reset */
@@ -247,10 +247,6 @@ main::after {
    align-items: center;
    justify-content: center;
    padding: 40px 20px 0;
-}
-
-.skills .column {
-   padding: 20px;
 }
 
 /* Projects */
