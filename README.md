@@ -1,4 +1,4 @@
-<div align="center"><h2>Portfolio Website</h2></div>
+<img align="center" width="60px" src="https://user-images.githubusercontent.com/62628408/122786101-dafa2800-d2ab-11eb-913d-bb3e8c49ce7a.png">
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/107d7648-dd15-45d9-9637-2d13681b5f2c/deploy-status)](https://app.netlify.com/sites/victoreke/deploys)
 
