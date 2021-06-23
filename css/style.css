@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-   /* Color code */
-   --secondary-color: #7a7a7a;
+   /* Light Mode */
+   --primary-color: #7360ffff;
+   --maximum-blue-purple: #989aefff;
+   --maximum-blue-purple-2: #b4aafaff;
+   --sonic-silver: #7a7a7aff;
+   --cultured: #f4f4f4ff;
+   --white: #ffffffff;
+   --bg-gradient: linear-gradient(40deg, hsl(0, 0%, 100%) 0%, hsla(0, 0%, 100%, 1) 20%, hsla(216, 46%, 80%, 1) 40%, hsla(204, 38%, 80%, 1) 60%, hsla(198, 34%, 80%, 1) 80%, hsla(247, 100%, 69%, 1) 100%);
+
+   /* Light Mode */
    --primary-color: #7360ff;
-   --queen-blue: #4c6ca0;
-   --bg-secondary: #111;
-   --bg-primary: #000;
-   --jet: #333333; 
+   --secondary-color: #9a9bef;
+   --text-primary-color: #110844;
+   --text-secondary-color: #64707d;
+   --bg-primary-color: #fff;
+   --bg-secondary-color: #f2f2f2;
+   --other-color: #fff; 
+   
+   /* Dark Mode */
+   /* --primary-color: #7360ff;
+   --secondary-color: #989aef;
+   --text-primary-color: #e1e1ff;
+   --text-secondary-color: #fff;
+   --bg-primary-color: #000;
+   --bg-secondary-color: #111;
+   --other-color: #333333;  */
 
    /* Icons */
    --color-1: #e65100;
@@ -25,8 +44,8 @@
 
 /* Main  */
 body {
-   background-color: var(--bg-primary);
-   color: #fff;
+   background: var(--bg-primary-color);
+   color: var(--text-primary-color);
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    line-height: 1.3;
 }
@@ -46,7 +65,7 @@ ul {
 
 a {
    text-decoration: none;
-   color: #fff;
+   color: var(--text-secondary-color);
 }
 
 h1, h2, h3, h4 {
@@ -71,9 +90,12 @@ h1, h2, h3, h4 {
    font-size: 0.75rem;
    font-weight: 800;
    margin: 0 30px;
-   border-bottom: 1px solid var(--bg-primary);
    transition: all 0.3s ease-in-out;
    padding: 20px;
+}
+
+.navbar ul li a:hover {
+   color: var(--text-primary-color);
 }
 
 .navbar .logo img {
@@ -110,11 +132,12 @@ h1, h2, h3, h4 {
 
 .content h2 {
    max-width: 800px;
+   font-size: 3rem;
 }
 
 .content p {
    margin: 0.9rem 0 2rem;
-   color: var(--secondary-color);
+   color: var(--text-secondary-color);
    font-weight: 500;
 }
 
@@ -126,7 +149,7 @@ h1, h2, h3, h4 {
 /* Hero image */
 .content .content-image img {
    width: 300px;
-   border: 1px solid var(--jet);
+   border: 1px solid var(--text-secondary-color);
    border-radius: 50%;
    padding: 30px;
    transform: translateY(-40px);
@@ -196,7 +219,7 @@ main::after {
 }
 
 .about {
-   background-color: var(--bg-secondary);
+   background-color: var(--primary-color);
    padding: 1rem;
 }
 
@@ -306,22 +329,18 @@ main::after {
 }
 
 .project-container .icon-header a {
-   color: var(--secondary-color);
+   color: var(--text-secondary-color);
    margin-left: 0.7rem;
    font-size: 1.1rem;
 }
 
 .project-container .icon-header a:hover {
-   color: #fff;
+   color: var(--text-primary-color);
 }
 
 .project-container header {
    line-height: 1.7;
    margin-bottom: 1.5rem;
-}
-
-.project-container header h3 {
-   color: #fff;
 }
 
 .project-container ul {
@@ -356,13 +375,13 @@ main::after {
 
 /* Form */
 .form-container {
-   max-width: 900px;
+   max-width: 600px;
    margin: 3rem auto 0;
 }
 
 .form {
-   background-color: var(--bg-secondary);
-   padding: 2.5rem;
+   background-color: var(--bg-secondary-color);
+   padding: 2rem 1.8rem;
    border-radius: 3px;
 }
 
@@ -374,16 +393,16 @@ main::after {
    display: block;
    font-size: 0.8rem;
    padding-bottom: 0.5rem;
-   color: var(--jet);
+   color: var(--text-primary-color);
 }
 
 .form-group input, .form-group textarea, .form-group button {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color: var(--jet);
+   background-color: var(--other-color);
    color: #fff;
    width: 100%;
    padding: 1rem;
-   border: 1px solid var(--jet);
+   border: 1px solid var(--other-color);
    outline: none;
    transition: border 0.3s ease-in-out;
    font-size: 0.9rem;
@@ -392,7 +411,6 @@ main::after {
 .form-group input:focus, 
 .form-group textarea:focus {
    border: 1px solid var(--primary-color);
-   background-color: var(--bg-secondary);
 } 
 
 .form-group .btn {
@@ -408,7 +426,7 @@ main::after {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: var(--bg-secondary);
+   background-color: var(--bg-secondary-color);
    padding: 1rem 2rem;
 }
 
