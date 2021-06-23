@@ -9,7 +9,7 @@
    --bg-primary-color: #fff;
    --bg-secondary-color: #f2f2f2;
    --other-color: #fff; 
-   
+
    /* Icons */
    --color-1: #e65100;
    --color-2: #8a2be2;
@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
 }
 
 .navbar ul li a:hover {
-   color: var(--text-primary-color);
+   color: var(--primary-color);
 }
 
 .navbar .logo img {
