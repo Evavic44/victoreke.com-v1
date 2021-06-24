@@ -8,7 +8,7 @@
    --text-secondary-color: #64707d;
    --bg-primary-color: #fff;
    --bg-secondary-color: #f2f2f2;
-   --other-color: #fff; 
+   --other-color: #bbb; 
 
    /* Icons */
    --color-1: #e65100;
@@ -21,11 +21,11 @@
    /* Dark Mode */
    --primary-color: #7360ff;
    --secondary-color: #989aef;
-   --text-primary-color: #e1e1ff;
-   --text-secondary-color: #fff;
+   --text-primary-color: #fff;
+   --text-secondary-color: #64707d;
    --bg-primary-color: #000;
    --bg-secondary-color: #111;
-   --other-color: #333333;
+   --other-color: #bbb;
 }
 
 /* Reset */
@@ -58,7 +58,7 @@ ul {
 
 a {
    text-decoration: none;
-   color: var(--text-secondary-color);
+   color: var(--text-primary-color);
 }
 
 h1, h2, h3, h4 {
@@ -136,7 +136,6 @@ h1, h2, h3, h4 {
 
 .content p {
    margin: 0.9rem 0 2rem;
-   color: var(--text-secondary-color);
    font-weight: 500;
 }
 
@@ -218,7 +217,7 @@ main::after {
 }
 
 .about {
-   background-color: var(--primary-color);
+   background-color: var(--bg-secondary-color);
    padding: 1rem;
 }
 
@@ -240,7 +239,6 @@ main::after {
    font-size: 0.85rem;
    max-width: 150px;
    margin: 0 auto 20px;
-   color: #fff;
 }
 
 .bio-stats {
@@ -249,7 +247,6 @@ main::after {
    font-weight: 600;
    text-align: center;
    padding: 20px;
-   color: #fff;
 }
 
 .bio-stats p {
@@ -328,7 +325,7 @@ main::after {
 }
 
 .project-container .icon-header a {
-   color: var(--text-secondary-color);
+   color: var(--text-primary-color);
    margin-left: 0.7rem;
    font-size: 1.1rem;
 }
@@ -416,7 +413,7 @@ main::after {
 .form-group input, .form-group textarea, .form-group button {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    display: block;
-   color: var(--text-secondary-color);
+   color: var(--text-primary-color);
    width: 100%;
    padding: 1rem;
    border: 1px solid var(--bg-secondary-color);
@@ -424,6 +421,7 @@ main::after {
    outline: none;
    transition: border 0.3s ease-in-out;
    font-size: 0.9rem;
+   background-color: var(--secondary--color);
 }
 
 .form-group input:focus, 

@@ -63,7 +63,7 @@
 }
 
 .btn:hover {
-   background: var(--bg-primary-color);
+   background: #fff;
    color: var(--primary-color);
    border: 1px solid var(--primary-color);
 }
@@ -150,7 +150,7 @@
 .theme-switch input { display: none; }
 
 .slider {
-   background-color: var(--bg-secondary-color);
+   background-color: var(--other-color);
    position: absolute;
    bottom: 0;
    left: 0;
@@ -161,14 +161,14 @@
 }
 
 .slider:before {
-   content: '';
+   content: "";
    position: absolute;
    bottom: 4px;
    left: 4px;
    height: 22px;
    width: 22px;
    transition: 0.4s;
-   background-color: var(--bg-primary-color);
+   background-color: #fff;
 }
 
 input:checked + .slider {
@@ -176,7 +176,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-   transform: translateX(26px);
+   transform: translateX(20px);
 }
 
 .slider.round { border-radius: 25px; }
