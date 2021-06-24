@@ -443,8 +443,7 @@ main::after {
 #footer {
    background-color: var(--bg-secondary-color);
 }
-   
-   
+
 #footer .footer-container {
    display: flex;
    align-items: center;

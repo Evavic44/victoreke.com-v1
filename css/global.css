@@ -133,3 +133,53 @@
    -------- Animation Ends Here -----------
    
 */
+
+/* Dark Mode switch */
+.theme-switch-wrapper {
+   display: flex;
+   align-items: center;
+}
+
+.theme-switch {
+   display: inline-block;
+   height: 30px;
+   position: relative;
+   width: 50px;
+}
+
+.theme-switch input { display: none; }
+
+.slider {
+   background-color: var(--bg-secondary-color);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   transition: 0.4s;
+   cursor: pointer;
+}
+
+.slider:before {
+   content: '';
+   position: absolute;
+   bottom: 4px;
+   left: 4px;
+   height: 22px;
+   width: 22px;
+   transition: 0.4s;
+   background-color: var(--bg-primary-color);
+}
+
+input:checked + .slider {
+   background-color: var(--primary-color);
+}
+
+input:checked + .slider:before {
+   transform: translateX(26px);
+}
+
+.slider.round { border-radius: 25px; }
+
+.slider.round:before { border-radius: 50%; }
+
