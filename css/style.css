@@ -357,6 +357,10 @@ main::after {
    margin: 2rem 0;
 }
 
+.contact .container {
+   max-width: 1100px;
+}
+
 .contact .form-header {
    text-align: center;
    margin: 1rem 0;
@@ -370,18 +374,32 @@ main::after {
    width: 700px;
    margin: 0 auto;
    padding: 0.5rem;
+   padding-bottom: 2rem;
 }
 
 /* Form */
 .form-container {
-   max-width: 600px;
-   /* margin: 3rem auto 0; */
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   height: 100%;
+}
+
+.form-image {
+   background: url(/img/Pattern.svg) no-repeat center left/cover;
+   object-fit: cover;
+}
+
+.form-page {
+   align-self: center;
+   border: 1px solid var(--bg-secondary-color);
 }
 
 .form {
-   background-color: var(--bg-secondary-color);
-   padding: 2rem 1.8rem;
-   border-radius: 3px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1.5rem;
+   grid-column: 1 span 3; 
 }
 
 .form-group {
@@ -397,11 +415,12 @@ main::after {
 
 .form-group input, .form-group textarea, .form-group button {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   background-color: var(--other-color);
+   display: block;
    color: var(--text-secondary-color);
    width: 100%;
    padding: 1rem;
-   border: 1px solid var(--other-color);
+   border: 1px solid var(--bg-secondary-color);
+   border-radius: 3px;
    outline: none;
    transition: border 0.3s ease-in-out;
    font-size: 0.9rem;
@@ -409,7 +428,7 @@ main::after {
 
 .form-group input:focus, 
 .form-group textarea:focus {
-   border-bottom: 1px solid var(--primary-color);
+   border: 1px solid var(--primary-color);
 } 
 
 .form-group .btn {
@@ -421,11 +440,15 @@ main::after {
 }
 
 /* Footer */
+#footer {
+   background-color: var(--bg-secondary-color);
+}
+   
+   
 #footer .footer-container {
    display: flex;
    align-items: center;
    justify-content: space-between;
-   background-color: var(--bg-secondary-color);
    padding: 1rem 2rem;
 }
 
