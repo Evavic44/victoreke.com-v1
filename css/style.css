@@ -73,6 +73,11 @@ h1, h2, h3, h4 {
    justify-content: space-around;
    width: 100%;
    padding: 20px;
+   position: fixed;
+   top: 0;
+   /* background: var(--bg-secondary-color); */
+   z-index: 200;
+   height: 70px;
 }
 
 .navbar ul {
@@ -115,8 +120,9 @@ h1, h2, h3, h4 {
    align-items: center;
    justify-content: space-between;
    padding: 0 30px 40px;
-   height: 90%;
+   height: 100%;
    position: relative;
+   margin-top: 4rem;
 }
 
 .content h1 {
@@ -369,7 +375,7 @@ main::after {
 /* Form */
 .form-container {
    max-width: 600px;
-   margin: 3rem auto 0;
+   /* margin: 3rem auto 0; */
 }
 
 .form {
@@ -392,7 +398,7 @@ main::after {
 .form-group input, .form-group textarea, .form-group button {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: var(--other-color);
-   color: #fff;
+   color: var(--text-secondary-color);
    width: 100%;
    padding: 1rem;
    border: 1px solid var(--other-color);
