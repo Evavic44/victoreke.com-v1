@@ -11,7 +11,7 @@
 .color-4 {color: var(--color-4);}
 
 .text-primary {
-   color: var(--secondary-color);
+   color: var(--primary-color);
    font-weight: 600;
 }
 
