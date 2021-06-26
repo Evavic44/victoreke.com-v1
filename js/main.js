@@ -1,4 +1,4 @@
-// Hamburger menu
+// ?Hamburger menu
 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -61,3 +61,19 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+// Smooth scroll
+$('#navbar a, .btn').on('click', function (e) {
+   if (this.hash !== '') {
+      e.preventDefault();
+
+      const hash = this.hash;
+
+      $('html, body').animate(
+      {
+         scrollTop: $(hash).offset().top - 70,
+      },
+      900
+      );
+   }
+});

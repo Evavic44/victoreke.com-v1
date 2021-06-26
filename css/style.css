@@ -503,7 +503,7 @@ main::after {
       order: 1;
    }
 
-   .menu {
+   #menu {
       order: 3;
    }
 
