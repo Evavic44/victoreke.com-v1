@@ -88,7 +88,7 @@ h1, h2, h3, h4 {
 .navbar ul li a {
    display: inline-block;
    font-size: 0.75rem;
-   font-weight: 700;
+   font-weight: 800;
    margin: 0 30px;
    transition: all 0.3s ease-in-out;
    padding: 20px;
