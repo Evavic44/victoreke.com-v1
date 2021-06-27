@@ -102,13 +102,9 @@
    align-items: center;
    justify-content: center;
    text-align: center;
-   padding: 1.5rem;
 }
-/* 
 
-   ------- Animation starts here ------
-
-*/
+/* ------- Animation starts here ------ */
 
 /* Hero Animation */
 @keyframes anime-2 {
@@ -129,10 +125,8 @@
    position: relative;
    animation: anime-2 1.5s 6 alternate-reverse forwards ease-in-out;
 }
-/* 
-   -------- Animation Ends Here -----------
-   
-*/
+
+/* -------- Animation Ends Here ----------- */
 
 /* Dark Mode switch */
 .theme-switch-wrapper {
@@ -183,3 +177,13 @@ input:checked + .slider:before {
 
 .slider.round:before { border-radius: 50%; }
 
+
+/* Responsive 700px */
+@media (max-width: 768px) {
+   .icons a, .icons span {
+      font-size: 1.3rem;
+      margin: 12px;
+      height: 45px;
+      width: 45px;
+   }
+}

@@ -156,6 +156,7 @@ h1, h2, h3, h4 {
    align-items: center;
    justify-content: space-between;
    padding: 0 30px 40px;
+   margin-bottom: 2rem;
    height: 100%;
    position: relative;
    margin-top: 4rem;
@@ -233,8 +234,7 @@ h1, h2, h3, h4 {
 
 /* About */
 #about {
-   height: 100%;
-   padding-top: 20px;
+   padding-top: 3rem;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    margin-bottom: 60px;
 }
@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
 }
 
 .bio-stats {
-   width: 600px;
+   max-width: 600px;
    font-size: 1.07rem;
    font-weight: 600;
    text-align: center;
@@ -548,7 +548,6 @@ h1, h2, h3, h4 {
       text-align: right;
       transition: 0.3s;
       background-color: var(--bg-secondary-color);
-      box-shadow: 0 10px 30px 5px #333;
    }
 
    .nav-menu.active {
@@ -582,24 +581,24 @@ h1, h2, h3, h4 {
       transform: translateY(-8px) rotate(-45deg);
   }
 
-  /* Hero page */
   body {
    overflow-x: hidden;
   }
 
   #hero {
      margin-top: 2rem;
+     height: 120vh;
    }
    
    #hero .content {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 6rem 1rem 1rem 2.5rem;
+      padding: 3rem 1rem 1rem 2.5rem;
    }   
    
    .content-text {
-      margin-bottom: 1.5rem;
+      margin-bottom: 3rem;
    }
 
    .content h2 {
@@ -613,6 +612,30 @@ h1, h2, h3, h4 {
    /* Hero circle */
   #hero::after {
      top: 5%;
-     left: 80%;
+     left: 70%;
+   }
+
+   .content .content-image {
+      margin-top: 3rem;
+   }
+
+   .content .content-image img {
+      width: 270px;
+      padding: 25px;
+   }
+
+   .content .content-image .overlay-icons::after {
+      right: 10px;
+   }
+
+   .icons span {
+      font-size: 1rem;
+      margin: 10px;
+      width: 40px;
+      height: 0px;
+   }
+
+   .project-container {
+      grid-template-columns: repeat(2, 1fr);
    }
 }
