@@ -234,7 +234,6 @@ h1, h2, h3, h4 {
 
 /* About */
 #about {
-   padding-top: 3rem;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    margin-bottom: 60px;
 }
@@ -619,13 +618,12 @@ h1, h2, h3, h4 {
       margin-top: 3rem;
    }
 
-   .content .content-image img {
-      width: 270px;
-      padding: 25px;
-   }
-
    .content .content-image .overlay-icons::after {
       right: 10px;
+   }
+
+   #about {
+      padding-top: 2rem;
    }
 
    .icons span {
