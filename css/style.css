@@ -134,7 +134,6 @@ h1, h2, h3, h4 {
    height: 100vh;
    margin-bottom: 2rem;
    position: relative;
-   overflow: hidden;
 }
 
 /* Hero circle */
@@ -593,8 +592,7 @@ h1, h2, h3, h4 {
 
   #hero {
      margin-top: 2rem;
-     height: 120vh;
-   }
+  }
    
    #hero .content {
       flex-direction: column;
@@ -608,11 +606,11 @@ h1, h2, h3, h4 {
    }
 
    .content h2 {
-     font-size: 2.9rem;
+     font-size: 2.6rem;
    }
    
   .content p {
-     margin: 0 0 2rem;
+     max-width: 300px;
    }
 
    /* Hero circle */
@@ -622,7 +620,7 @@ h1, h2, h3, h4 {
    }
 
    .content .content-image {
-      margin-top: 3rem;
+      margin-top: 1rem;
    }
 
    .content .content-image .overlay-icons::after {
@@ -682,5 +680,15 @@ h1, h2, h3, h4 {
 
    .form-image {
       height: 200px;
+   }
+}
+
+@media(max-width: 400px) {
+   #hero {
+      height: 150vh;
+   }
+
+   #hero .content {
+      justify-content: space-around;
    }
 }
