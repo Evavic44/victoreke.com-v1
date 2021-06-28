@@ -186,4 +186,11 @@ input:checked + .slider:before {
       height: 45px;
       width: 45px;
    }
+
+   .theme-switch-wrapper {
+      display: block;
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid var(--other-color);
+      width: 100%;
+   }
 }

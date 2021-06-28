@@ -134,6 +134,7 @@ h1, h2, h3, h4 {
    height: 100vh;
    margin-bottom: 2rem;
    position: relative;
+   overflow: hidden;
 }
 
 /* Hero circle */
@@ -386,11 +387,11 @@ h1, h2, h3, h4 {
 }
 
 .form-header h2 {
-   font-size: 3.4rem;
+   font-size: 3rem;
 }
 
 .form-header p {
-   width: 700px;
+   max-width: 700px;
    margin: 0 auto;
    padding: 0.5rem;
    padding-bottom: 2rem;
@@ -628,10 +629,6 @@ h1, h2, h3, h4 {
       right: 10px;
    }
 
-   #about {
-      padding-top: 2rem;
-   }
-
    .icons span {
       font-size: 1rem;
       margin: 10px;
@@ -645,17 +642,8 @@ h1, h2, h3, h4 {
 }
 
 @media(max-width: 700px) {
-   .content h1 {
-      font-size: 0.9rem;
-   }
-
-   .content h2 {
-      font-size: 2.6rem;
-   }
-
    .content p {
-      margin: 1rem 0 1rem;
-      font-size: 0.9rem;
+      margin: 1rem 0;
    }
 
    .bio {
@@ -677,6 +665,14 @@ h1, h2, h3, h4 {
    .skills .box-header {
       transform: translateY(-50px);
       padding-bottom: 0;
+   }
+
+   .skills .box-container {
+      grid-template-columns: 1fr;
+   }
+
+   .project-container {
+      grid-template-columns: 1fr;
    }
 
    .form-container {
