@@ -134,6 +134,7 @@ h1, h2, h3, h4 {
    height: 100vh;
    margin-bottom: 2rem;
    position: relative;
+   overflow: hidden;
 }
 
 /* Hero circle */
@@ -548,7 +549,7 @@ h1, h2, h3, h4 {
       right: -100%;
       top: 4.65rem;
       flex-direction: column;
-      width: 50%;
+      width: 70%;
       height: 100%;
       text-align: right;
       transition: 0.3s;
@@ -598,7 +599,6 @@ h1, h2, h3, h4 {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 3rem 1rem 1rem 2.5rem;
    }   
    
    .content-text {
