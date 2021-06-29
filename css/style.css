@@ -534,11 +534,11 @@ h1, h2, h3, h4 {
    .theme-switch-wrapper {
       order: 2;
    }
-
+   
    .navbar ul li a {
       margin: 0;
    }
-
+   
    .navbar ul li a:hover {
       background-color: var(--primary-color);
       color: #fff;
@@ -547,7 +547,7 @@ h1, h2, h3, h4 {
    .nav-menu {
       position: fixed;
       right: -100%;
-      top: 4.65rem;
+      top: 0;
       flex-direction: column;
       width: 70%;
       height: 100%;
@@ -556,6 +556,11 @@ h1, h2, h3, h4 {
       background-color: var(--bg-secondary-color);
    }
 
+   /* Add spacing between hamburer and navigation menu */
+   .nav-menu li:first-child {
+      margin-top: 4rem; 
+   }
+   
    .nav-menu.active {
       right: 0;
    }
