@@ -518,7 +518,7 @@ h1, h2, h3, h4 {
 }
 
 /* Navbar */
-@media (max-width: 769px) and (max-width: 701px) {
+@media (max-width: 768px) and (max-width: 701px) {
    .navbar {
       justify-content: space-between;
    }
@@ -679,11 +679,7 @@ h1, h2, h3, h4 {
    }
 
    .skills .box-container {
-      grid-template-columns: 1fr;
-   }
-
-   .project-container {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(2, 1fr);
    }
 
    .form-container {
@@ -696,7 +692,17 @@ h1, h2, h3, h4 {
    }
 }
 
-@media(max-width: 500px) and (max-width: 320px) {
+@media(max-width: 500px) {
+   .skills .box-container {
+      grid-template-columns: 1fr;
+   }
+
+   .project-container {
+      grid-template-columns: 1fr;
+   }
+}
+
+@media(max-width: 499px) and (max-width: 320px) {
    #hero {
       height: 100vh;
    }
