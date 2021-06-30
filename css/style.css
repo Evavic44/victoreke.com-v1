@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
 }
 
 .bio-stats {
-   max-width: 600px;
+   max-width: 700px;
    font-size: 1.07rem;
    font-weight: 600;
    text-align: center;
@@ -277,6 +277,10 @@ h1, h2, h3, h4 {
    font-size: 1.02rem;
    text-align: center;
    line-height: 1.4;
+}
+
+.bio-stats a {
+   font-weight: 400;
 }
 
 .bio-stats p span {
@@ -693,6 +697,10 @@ h1, h2, h3, h4 {
 }
 
 @media(max-width: 500px) {
+   .bio-stats p {
+      max-width: 500px;
+   }
+
    .skills .box-container {
       grid-template-columns: 1fr;
    }
