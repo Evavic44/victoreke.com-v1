@@ -489,6 +489,7 @@ h1, h2, h3, h4 {
    text-align: center;
    font-size: 0.75rem;
    font-weight: 400;
+   color: var(--text-secondary-color);
    transform: translateX(-37%);
 }
 
