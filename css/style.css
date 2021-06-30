@@ -645,6 +645,14 @@ h1, h2, h3, h4 {
 }
 
 @media(max-width: 700px) {
+   #hero {
+      height: 130vh;
+   }
+
+   #hero .content {
+      justify-content: space-around;
+   }
+
    .content p {
       margin: 1rem 0;
    }
@@ -670,10 +678,6 @@ h1, h2, h3, h4 {
       padding-bottom: 0;
    }
 
-   .skills .box-container {
-      grid-template-columns: 1fr;
-   }
-
    .project-container {
       grid-template-columns: 1fr;
    }
@@ -688,12 +692,8 @@ h1, h2, h3, h4 {
    }
 }
 
-@media(max-width: 400px) {
-   #hero {
-      height: 150vh;
-   }
-
-   #hero .content {
-      justify-content: space-around;
+@media(max-width: 500px) {
+   .skills .box-container {
+      grid-template-columns: 1fr;
    }
 }
