@@ -193,6 +193,11 @@ input:checked + .slider:before {
    color: var(--primary-color);
 }
 
+.badges {
+   width: 160px;
+   padding-bottom: 0.5rem;
+}
+
 /* Responsive 700px */
 @media (max-width: 768px) {
    .icons a, .icons span {
