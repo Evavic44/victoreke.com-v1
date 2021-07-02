@@ -169,7 +169,7 @@ h1, h2, h3, h4 {
 
 .content h2 {
    max-width: 800px;
-   font-size: 3rem;
+   font-size: 2.8rem;
 }
 
 .content p {
@@ -181,6 +181,8 @@ h1, h2, h3, h4 {
    font-weight: 600;
    font-size: 0.8rem;
 }
+
+.content .btn span {margin-left: 0.1rem}
 
 /* Hero image */
 .content .content-image img {

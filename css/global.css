@@ -68,6 +68,14 @@
    border: 1px solid var(--primary-color);
 }
 
+.btn:hover span {
+   transition: all 0.4s cubic-bezier(0, 0, 1, 35);
+}
+
+.btn:hover span {
+   transform: translateY(-5px);
+}
+
 .icons a, .icons span {
    font-size: 1.6rem;
    margin: 10px 30px;
