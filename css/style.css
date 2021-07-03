@@ -489,6 +489,7 @@ h1, h2, h3, h4 {
    background-color: var(--primary-color);
    border-radius: 50%;
    z-index: -40000;
+   animation: animate infinite 4s ease-in-out;
 }
 
 .thankyou-content h1::after {
@@ -501,6 +502,20 @@ h1, h2, h3, h4 {
    background-color: var(--primary-color);
    border-radius: 50%;
    z-index: -40000;
+   animation: animate infinite 4s forwards alternate-reverse ease-in-out;
+}
+
+@keyframes animate {
+   0% {transform: translateY(-20px);}
+   10% {transform: translateY(-30px);}
+   20% {transform: translateY(-60px);}
+   40% {transform: translateY(-800px);}
+   50% {transform: translateY(-100px);}
+   6% {transform: translateY(-110px);}
+   70% {transform: translateY(-120px);}
+   80% {transform: translateY(-130px);}
+   90% {transform: translateY(-150px);}
+   100% {transform: translateY(-160px);}
 }
 
 .thankyou-content h1 {
