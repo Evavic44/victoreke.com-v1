@@ -16,7 +16,6 @@
 }
 
 .text-secondary {
-   /* font-family: 'Montserrat', sans-serif; */
    font-weight: 800; 
 }
 
@@ -69,7 +68,7 @@
 }
 
 .btn:hover span {
-   transition: all 0.4s cubic-bezier(0, 0, 1, 35);
+   transition: all 0.4s cubic-bezier(0, 0, 1, 0);
 }
 
 .btn:hover span {
