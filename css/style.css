@@ -463,6 +463,56 @@ h1, h2, h3, h4 {
    font-weight: 600;
 }
 
+/* Thank you page */
+.thankyou {
+   height: 100vh;
+}
+
+.thankyou-content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: var(--text-primary-color);
+   height: 100%;
+   overflow: hidden;
+   padding: 2rem;
+}
+
+.thankyou-content h1::before {
+   content: '';
+   position: absolute;
+   top: -400px;
+   left: -700px;
+   width: 700px;
+   height: 700px;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   z-index: -40000;
+}
+
+.thankyou-content h1::after {
+   content: '';
+   position: absolute;
+   bottom: -500px;
+   right: -700px;
+   width: 700px;
+   height: 700px;
+   background-color: var(--primary-color);
+   border-radius: 50%;
+   z-index: -40000;
+}
+
+.thankyou-content h1 {
+   font-size: 5rem;
+   position: relative;
+}
+
+.thankyou-content p {
+   font-size: 1.3rem;
+   padding: 1rem 2rem;
+}
+
 /* Footer */
 #footer {
    background-color: var(--bg-secondary-color);

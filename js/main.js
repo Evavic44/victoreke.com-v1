@@ -63,7 +63,7 @@ if (currentTheme) {
 }
 
 // Smooth scroll
-$('#navbar a, .btn-scroll-top').on('click', function (e) {
+$('#navbar-scroll a, .btn-scroll-top').on('click', function (e) {
    if (this.hash !== '') {
       e.preventDefault();
 
