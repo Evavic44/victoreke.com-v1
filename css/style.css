@@ -151,7 +151,6 @@ h1, h2, h3, h4 {
    transition: 0.5s;
 }
 
-
 #hero .content {
    display: flex;
    align-items: center;
@@ -227,8 +226,8 @@ h1, h2, h3, h4 {
 .content .content-image .overlay-icons::after {
    content: '';
    position: absolute;
-   bottom: -35px;
-   right: 18px;
+   bottom: -105px;
+   right: -30px;
    width: 60px;
    height: 60px;
    background-image: url(../img/icons8-css3.svg);
@@ -633,10 +632,10 @@ h1, h2, h3, h4 {
    .content .content-image {
       margin-top: 1rem;
    }
-
+/* 
    .content .content-image .overlay-icons::after {
       right: 10px;
-   }
+   } */
 
    .icons span {
       font-size: 1rem;
