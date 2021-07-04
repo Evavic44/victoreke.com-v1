@@ -260,7 +260,7 @@ h1, h2, h3, h4 {
 
 .bio .experience p {
    font-weight: 700;
-   font-size: 0.85rem;
+   font-size: 1rem;
    max-width: 150px;
    margin: 0 auto 20px;
 }
