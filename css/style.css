@@ -476,7 +476,8 @@ h1, h2, h3, h4 {
    color: var(--text-primary-color);
    height: 100%;
    overflow: hidden;
-   padding: 2rem;
+   padding: 1rem;
+   text-align: center;
 }
 
 .thankyou-content h1::before {
@@ -489,7 +490,7 @@ h1, h2, h3, h4 {
    background-color: var(--primary-color);
    border-radius: 50%;
    z-index: -40000;
-   animation: animate infinite 4s ease-in-out;
+   animation: animate infinite 50s forwards alternate ease-in-out;
 }
 
 .thankyou-content h1::after {
@@ -502,30 +503,41 @@ h1, h2, h3, h4 {
    background-color: var(--primary-color);
    border-radius: 50%;
    z-index: -40000;
-   animation: animate infinite 4s forwards alternate-reverse ease-in-out;
+   animation: animate infinite 50s forwards alternate-reverse ease-in-out;
 }
 
 @keyframes animate {
-   0% {transform: translateY(-20px);}
-   10% {transform: translateY(-30px);}
-   20% {transform: translateY(-60px);}
-   40% {transform: translateY(-800px);}
-   50% {transform: translateY(-100px);}
-   6% {transform: translateY(-110px);}
-   70% {transform: translateY(-120px);}
-   80% {transform: translateY(-130px);}
-   90% {transform: translateY(-150px);}
-   100% {transform: translateY(-160px);}
+   10% {transform: translateX(100px);}
+   15% {transform: translateY(-100px);}
+   20% {transform: translateX(200px);}
+   25% {transform: translateY(-200px);}
+   30% {transform: translateX(300px);}
+   35% {transform: translateY(-300px);}
+   40% {transform: translateX(110px);}
+   45% {transform: translateY(-110px);}
+   50% {transform: translateX(130px);}
+   55% {transform: translateY(-130px);}
+   60% {transform: translateX(150px);}
+   65% {transform: translateY(-150px);}
+   70% {transform: translateX(170px);}
+   75% {transform: translateY(-170px);}
+   80% {transform: translateX(190px);}
+   85% {transform: translateY(-190px);}
+   90% {transform: translateX(210px);}
+   95% {transform: translateY(-210px);}
+   100% {transform: translateX(100px);}
+   105% {transform: translateY(-100px);}
 }
 
 .thankyou-content h1 {
-   font-size: 5rem;
+   line-height: 1.1;
+   font-size: 4rem;
    position: relative;
 }
 
 .thankyou-content p {
    font-size: 1.3rem;
-   padding: 1rem 2rem;
+   padding: 0 1rem;
 }
 
 /* Footer */
