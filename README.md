@@ -1,4 +1,5 @@
-<img align="center" src="https://user-images.githubusercontent.com/62628408/123773676-c0840800-d8c4-11eb-902e-908bed42e2a0.png">
+<img align="center" src="https://user-images.githubusercontent.com/62628408/126922732-83d7b298-8c4c-490c-adbb-5b9a3b030576.png">
+
    
 [![Netlify Status](https://api.netlify.com/api/v1/badges/107d7648-dd15-45d9-9637-2d13681b5f2c/deploy-status)](https://app.netlify.com/sites/victoreke/deploys)
 </p>
