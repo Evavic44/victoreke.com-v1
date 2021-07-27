@@ -7,17 +7,28 @@
 
 
 ```css
-   /* Color code */
-   --secondary-color: #7a7a7a;
+   /* Light Mode */
    --primary-color: #7360ff;
-   --queen-blue: #4c6ca0;
-   --bg-secondary: #111;
-   --bg-primary: #000;
-   --jet: #333333; 
+   --secondary-color: #9a9bef;
+   --text-primary-color: #333333;
+   --text-secondary-color: #64707d;
+   --bg-primary-color: #fff;
+   --bg-secondary-color: #f2f2f2;
+   --other-color: #ccc;
 
    /* Icons */
    --color-1: #e65100;
    --color-2: #8a2be2;
    --color-3: #0277bd;
    --color-4: #ffd600;
+   
+   /* Dark Mode */
+   [data-theme="dark"]
+   --primary-color: #7360ff;
+   --secondary-color: #989aef;
+   --text-primary-color: #fff;
+   --text-secondary-color: #64707d;
+   --bg-primary-color: #000;
+   --bg-secondary-color: #111;
+   --other-color: #232323;
 ```
