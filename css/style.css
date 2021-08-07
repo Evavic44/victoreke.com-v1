@@ -464,7 +464,6 @@ h1, h2, h3, h4 {
 
 .form-group .btn {
    color: #fff;
-   text-transform: uppercase;
    font-weight: 600;
    transition: all 0.4s ease-in-out;
 }

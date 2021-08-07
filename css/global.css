@@ -59,6 +59,7 @@
    cursor: pointer;
    position: relative;
    transition: all 0.4s ease-in-out;
+   text-transform: uppercase;
 }
 
 .btn:hover {
