@@ -208,6 +208,10 @@ input:checked + .slider:before {
 
 /* Responsive 700px */
 @media (max-width: 768px) {
+   .navbar ul li a {
+      margin: 0 10px;
+   }
+
    .icons a, .icons span {
       font-size: 1.3rem;
       margin: 12px;
@@ -217,8 +221,7 @@ input:checked + .slider:before {
 
    .theme-switch-wrapper {
       display: block;
-      padding: 0.5rem 1rem;
-      border-bottom: 1px solid var(--other-color);
+      padding: 1rem;
       width: 100%;
    }
 }
