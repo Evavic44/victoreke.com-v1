@@ -451,20 +451,22 @@ h1, h2, h3, h4 {
    outline: none;
    transition: border 0.3s ease-in-out;
    font-size: 0.9rem;
+}
+
+.group-bg input, .group-bg textarea {
    background-color: var(--other--color);
 }
 
 .form-group input:focus, 
 .form-group textarea:focus {
    border: 1px solid var(--primary-color);
-} 
+}
 
 .form-group .btn {
-   background-color: var(--primary-color);
    color: #fff;
-   transition: all 0.4s ease-in-out;
-   font-size: 0.8rem;
+   text-transform: uppercase;
    font-weight: 600;
+   transition: all 0.4s ease-in-out;
 }
 
 /* Thank you page */

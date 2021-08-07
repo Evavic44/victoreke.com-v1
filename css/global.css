@@ -55,16 +55,15 @@
    background-color: var(--primary-color);
    color: #fff;
    padding: 1.125rem 1.75rem;
-   border: 1px solid var(--primary-color);
    border-radius: 1px;
    cursor: pointer;
+   position: relative;
    transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
    background: #fff;
    color: var(--primary-color);
-   border: 1px solid var(--primary-color);
 }
 
 .btn:hover span {
@@ -72,7 +71,7 @@
 }
 
 .btn:hover span {
-   transform: translateY(-5px);
+   transform: translateX(5px);
 }
 
 .icons a, .icons span {
