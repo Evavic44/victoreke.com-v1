@@ -60,11 +60,13 @@
    position: relative;
    transition: all 0.4s ease-in-out;
    text-transform: uppercase;
+   border: 1px solid var(--bg-primary-color);
 }
 
 .btn:hover {
    background: #fff;
    color: var(--primary-color);
+   border: 1px solid var(--primary-color);
 }
 
 .btn:hover span {
