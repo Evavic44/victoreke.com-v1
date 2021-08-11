@@ -34,18 +34,12 @@
 </head>
 
 <body id="home">
-   <header id="hero">
+   <header id="hero-project">
       <nav id="navbar-scroll" class="navbar">
          <h1 class="logo">
             <a href="index.html"><img src="./img/logo-dark.png" alt="Eke's logo"></a>
          </h1>
          <div id="menu">
-            <ul class="nav-menu">
-               <li class="nav-items"><a href="index.html#about" class="nav-link">ABOUT</a></li>
-               <li class="nav-items"><a href="index.html#skills" class="nav-link">SKILLS</a></li>
-               <li class="nav-items"><a href="index.html#projects" class="nav-link">PROJECTS</a></li>
-               <li class="nav-items"><a href="index.html#contact" class="nav-link">CONTACT</a></li>
-
                <div class="theme-switch-wrapper">
                   <label class="theme-switch" for="checkbox">
                      <input type="checkbox" id="checkbox">
@@ -54,37 +48,45 @@
                </div>
             </ul>
             <div class="hamburger">
-               <span class="bar"></span>
-               <span class="bar"></span>
-               <span class="bar"></span>
             </div>
          </div>
       </nav>
+
+      <section class="content container">
+         <div class="content-text">
+            <h1>Projects</h1>
+         </div>
+      </section>
    </header>
 
-   <footer id="footer">
-      <div class="container">
-         <div class="footer-container">
-            <div class="social">
-               <div>
-                  <a href="http://twitter.com/evavic44">
-                     <img
-                        src="https://img.shields.io/twitter/follow/evavic44?label=Twitter&logo=twitter&style=for-the-badge" />
-                  </a>
+   <main id="project-page" class="container">
+      <section class="featured">
+         <h2>Featured Projects<span class="underline"></span></h2>
+         <p>This is the section where I highlight my greatest projects and websites<p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut consequatur, repudiandae cumque odio eos mollitia libero sint hic repellat maxime corrupti! Sed mollitia voluptate incidunt ducimus voluptatum? Explicabo ducimus, natus quis omnis eius placeat. Quod eos dolores ipsam assumenda cupiditate repellat perspiciatis, enim error atque ea deleniti. Dolore, perspiciatis?</p>
+
+         <div class="projects feat-project">
+            <article class="card">
+               <div class="article-content">
+                  <div>
+                     <h2 class="category">Hotel Website<h2>
+                     <h3>Hotel Zeitaku</h3>
+                     <i class="fas fa-connect"></i>
+                  </div>
+
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum officia, nemo doloribus, amet maxime at autem voluptates sint omnis fuga reprehenderit illo. Temporibus molestias ab nesciunt recusandae repellat? Dicta, distinctio.</p>
+
+                  <div class="buttons">
+                     <a href="https://hotelzeitaku.netlify.app" target="_blank" rel="no-opener no-referrer" class="btn">Visit<span class="fab fa-link"></a>
+
+                     <a href="https://github.com/Evavic44/Hotel-Zeitaku" target="_blank" rel="no-opener no-referrer" class="btn">GitHub<span class="fab fa-link"></a>
+                  </div>
                </div>
-               <div>
-                  <a href="https://github.com/evavic44?tab=followers">
-                     <img
-                        src="https://img.shields.io/github/followers/evavic44?label=Followers&logo=GitHub&style=for-the-badge"
-                        alt="GitHub badge" />
-                  </a>
-               </div>
-            </div>
-            <p>Copyright &copy; Eke Victor 2021, All rights reserved</p>
-            <a href="#home" class="btn-scroll-top" title="Home"><span class="fas fa-angle-up"></span></a>
+               <img src="img/projects/hotel-zeitaku.png" alt="Screenshot of hotel zeitaku">
+            </article>
          </div>
-      </div>
-   </footer>
+      </section>
+   </main>
 </body>
 
 </html>
