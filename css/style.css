@@ -205,7 +205,7 @@ h1, h2, h3, h4 {
    position: absolute;
    top: 50px;
    left: -20px;
-   background-image: url(../img/icons8-html-5.svg);
+   background-image: url(../img/home/icons8-html-5.svg);
    background-repeat: no-repeat;
    width: 60px;
    height: 60px;
@@ -218,7 +218,7 @@ h1, h2, h3, h4 {
    position: absolute;
    bottom: -20px;
    right: 32%;
-   background-image: url(../img/icons8-javascript.svg);
+   background-image: url(../img/home/icons8-javascript.svg);
    background-repeat: no-repeat;
    width: 90px;
    height: 90px;
@@ -232,7 +232,7 @@ h1, h2, h3, h4 {
    right: -30px;
    width: 60px;
    height: 60px;
-   background-image: url(../img/icons8-css3.svg);
+   background-image: url(../img/home/icons8-css3.svg);
    background-repeat: no-repeat; 
 }
 
@@ -416,7 +416,7 @@ h1, h2, h3, h4 {
 }
 
 .form-image {
-   background: url(/img/Pattern.svg) no-repeat center left/cover;
+   background: url(/img/home/Pattern.svg) no-repeat center left/cover;
    object-fit: cover;
 }
 
