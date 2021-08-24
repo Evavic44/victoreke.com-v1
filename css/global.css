@@ -59,7 +59,6 @@
    cursor: pointer;
    position: relative;
    transition: all 0.1s ease-in-out;
-   text-transform: uppercase;
    border: 1px solid var(--bg-primary-color);
 }
 
@@ -102,15 +101,20 @@
    padding: 1.5rem;
    transition: all 0.3s ease-in-out;
    background: var(--bg-secondary-color);
-   border: 1px solid var(--bg-primary-color);
    border-radius: 3px;
    position: relative;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   border: 1px solid var(--bg-secondary-color);
 }
 
 .card:hover {
+   border: 1px solid var(--bg-secondary-color);
    background: var(--bg-primary-color); 
-   border: 1px solid var(--text-primary-color);
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
 }
+
+.card-images img {transition: .3s ease-in-out;}
+.card-images img:hover {opacity: 0.8;}
 
 /* Icons */
 .icons-container {
