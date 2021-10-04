@@ -32,10 +32,7 @@
 
 
 ### Other Color
-```css
-   /* Icons */
-   --color-1: #e65100;
-   --color-2: #8a2be2;
-   --color-3: #0277bd;
-   --color-4: #ffd600;
-```
+   --color-1: `#e65100`
+   --color-2: `#8a2be2`
+   --color-3: `#0277bd`
+   --color-4: `#ffd600`
