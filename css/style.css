@@ -10,6 +10,7 @@
    --bg-secondary-color: #f2f2f2;
    --other-color: #ccc;
    --navbar-bg: rgba(0, 0, 0, 0.1);
+   --rotate-color: #000;
    
    /* Icons */
    --color-1: #e65100;
@@ -27,7 +28,8 @@
    --bg-primary-color: #000;
    --bg-secondary-color: #111;
    --other-color: #232323;
-   --navbar-bg: rgba(0, 0, 0, 0.4)
+   --navbar-bg: rgba(0, 0, 0, 0.4);
+   --rotate-color: #fff;
 }
 
 /* Reset */
@@ -351,20 +353,56 @@ h1, h2, h3, h4 {
 
 #project-full {
    display: grid;
-   grid-template-columns: repeat(2, 1fr);
+   grid-template-columns: repeat(1, 1fr);
    grid-gap: 1rem;
    margin-bottom: 7rem;
 }
 
 .project-content {
-   backdrop-filter: blur(4px);
-   -webkit-backdrop-filter: blur(4px);
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   border: 1px solid var(--bg-primary-color);
+   display: grid;
+   grid-template-columns: 2fr 1fr;
 }
 
-.project-content:hover {
-   border: 1px solid var(--bg-secondary-color);
+.project-content .project-image {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 400px;
+   width: 100%;
+   transition: .5s ease-in-out;
+   border-bottom-right-radius: 20px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+.project-content .project-image-one {
+   background: url(../img/projects/transformedminds.png) no-repeat center center/cover;
+}
+.project-content .project-image .project-image-two {
+   background: url(../img/projects/skeep.png) no-repeat center center/cover;
+}
+.project-content .project-image .project-image-three {
+   background: url(../img/projects/projectamba.png) no-repeat center center/cover;
+}
+.project-content .project-image .project-image-four {
+   background: url(../img/projects/hotelzeitaku.png) no-repeat center center/cover;
+}
+.project-content .project-image .project-image-five {
+   background: url(../img/projects/windows-10.png) no-repeat center center/cover;
+}
+
+.project-content .project-image a {
+   opacity: 0;
+}
+
+.project-content .project-image:hover {
+   box-shadow: inset 2px 1000px 1000px 0 rgba(0, 0, 0, 0.7);
+   background-position: 40%;
+}
+
+.project-content .project-image:hover a {
+   opacity: 1;
 }
 
 .card-content {
