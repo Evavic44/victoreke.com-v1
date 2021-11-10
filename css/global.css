@@ -84,13 +84,35 @@
   transform: translateX(5px);
 }
 
-.btn-secondary {
-   background: #fff;
-   color: #000;
+/* Project Buttons */
+.btn-one, 
+.btn-two,
+.btn-three,
+.btn-four,
+.btn-five
+ {
+   background: var(--bg-primary-color);
+   color: var(--text-primary-color);
 }
 
-.btn-secondary:hover {
-   background: var(--primary-color);
+.btn-one:hover {
+   background: #f0d107;
+   color: #000;
+}
+.btn-two:hover {
+   background: orangered;
+   color: #fff;
+}
+.btn-three:hover {
+   background: #e22439;
+   color: #fff;
+}
+.btn-four:hover {
+   background: #3cce96;
+   color: #fff;
+}
+.btn-five:hover {
+   background: #0073E0;
    color: #fff;
 }
 
