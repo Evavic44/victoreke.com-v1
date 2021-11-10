@@ -413,10 +413,7 @@ h1, h2, h3, h4 {
 
 .card-content a {
    text-decoration: underline;
-   font-weight: 600;
    transition: .2s ease-in-out;
-   font-size: 1.14rem;
-   padding-right: 0.5rem;
 }
 
 .card-content a:hover {
@@ -428,14 +425,14 @@ h1, h2, h3, h4 {
    font-size: 1.1rem;
 }
 
-.card-content p {
-   padding: 0.5rem 0;
-}
-
 .card-content .project-info .stack {
    text-transform: uppercase;
    padding-bottom: 0.5rem;
    color: var(--primary-color);
+}
+
+.card-content .project-links a {
+   margin-right: 0.4rem;
 }
 
 .project-container .icon-header {
