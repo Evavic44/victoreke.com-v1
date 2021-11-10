@@ -347,7 +347,6 @@ h1, h2, h3, h4 {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
    grid-gap: 1.5rem;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    margin-bottom: 3rem;
 }
 
@@ -361,35 +360,35 @@ h1, h2, h3, h4 {
 .project-content {
    display: grid;
    grid-template-columns: 2fr 1fr;
+   margin: 2rem 0;
 }
 
 .project-content .project-image {
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-end;
    justify-content: center;
    height: 400px;
    width: 100%;
-   transition: .5s ease-in-out;
-   border-bottom-right-radius: 20px;
-   border-top-left-radius: 20px;
-   border-bottom-left-radius: 20px;
+   transition: .4s ease-in-out;
+   border-radius: 5px;
+   position: relative;
 }
 
 .project-content .project-image-one {
-   background: url(../img/projects/transformedminds.png) no-repeat center center/cover;
+   background: url(../img/projects/transformedminds.png) no-repeat 10% / cover;
 }
-.project-content .project-image .project-image-two {
-   background: url(../img/projects/skeep.png) no-repeat center center/cover;
+.project-content .project-image-two {
+   background: url(../img/projects/skeep.png) no-repeat  50% / cover;
 }
-.project-content .project-image .project-image-three {
-   background: url(../img/projects/projectamba.png) no-repeat center center/cover;
+.project-content .project-image-three {
+   background: url(../img/projects/projectamba.png) no-repeat 20% / cover;
 }
-.project-content .project-image .project-image-four {
-   background: url(../img/projects/hotelzeitaku.png) no-repeat center center/cover;
+.project-content .project-image-four {
+   background: url(../img/projects/hotelzeitaku.png) no-repeat 30% / cover;
 }
-.project-content .project-image .project-image-five {
-   background: url(../img/projects/windows-10.png) no-repeat center center/cover;
+.project-content .project-image-five {
+   background: url(../img/projects/windows-10.png) no-repeat 40% / cover;
 }
 
 .project-content .project-image a {
@@ -397,8 +396,8 @@ h1, h2, h3, h4 {
 }
 
 .project-content .project-image:hover {
-   box-shadow: inset 2px 1000px 1000px 0 rgba(0, 0, 0, 0.7);
-   background-position: 40%;
+   box-shadow: inset 2px 1000px 1000px 0 rgba(0, 0, 0, 0.5);
+   background-position: inherit;
 }
 
 .project-content .project-image:hover a {
@@ -406,19 +405,37 @@ h1, h2, h3, h4 {
 }
 
 .card-content {
-   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1.5rem;
 }
 
 .card-content a {
    text-decoration: underline;
-   font-size: 0.8rem;
    font-weight: 600;
+   transition: .2s ease-in-out;
+   font-size: 1.14rem;
+   padding-right: 0.5rem;
+}
+
+.card-content a:hover {
    color: var(--primary-color);
 }
 
 .card-content h2 {
-   color: var(--text-secondary-color);
-   font-size: 0.9rem;
+   color: var(--primary-color);
+   font-size: 1.1rem;
+}
+
+.card-content p {
+   padding: 0.5rem 0;
+}
+
+.card-content .project-info .stack {
+   text-transform: uppercase;
+   padding-bottom: 0.5rem;
+   color: var(--primary-color);
 }
 
 .project-container .icon-header {
