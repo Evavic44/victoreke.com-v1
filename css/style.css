@@ -376,19 +376,19 @@ h1, h2, h3, h4 {
 }
 
 .project-content .project-image-one {
-   background: url(../img/projects/transformedminds.png) no-repeat 10% / cover;
+   background: url(../img/projects/transformedminds.png) no-repeat 10% center/cover;
 }
 .project-content .project-image-two {
-   background: url(../img/projects/skeep.png) no-repeat  50% / cover;
+   background: url(../img/projects/skeep.png) no-repeat  50% center/cover;
 }
 .project-content .project-image-three {
-   background: url(../img/projects/projectamba.png) no-repeat 20% / cover;
+   background: url(../img/projects/projectamba.png) no-repeat 20% center/cover;
 }
 .project-content .project-image-four {
-   background: url(../img/projects/hotelzeitaku.png) no-repeat 30% / cover;
+   background: url(../img/projects/hotelzeitaku.png) no-repeat 30% center/cover;
 }
 .project-content .project-image-five {
-   background: url(../img/projects/windows-10.png) no-repeat 40% / cover;
+   background: url(../img/projects/windows-10.png) no-repeat 40% center/cover;
 }
 
 .project-content .project-image a {
@@ -726,6 +726,22 @@ h1, h2, h3, h4 {
 
 /* Responsive */
 @media(max-width: 890px) {
+   /* Project */
+   .project-content {
+      /* background-size: cover; */
+      grid-template-columns: 1fr;
+      /* grid-auto-rows: 200px; */
+   }
+
+   .project-content .project-image {
+      height: 100%;
+      width: 100%;
+   }
+
+   .project-content .project-image:hover {
+      background-position: 100%;
+   }
+
    /* Footer */
    #footer .footer-container {
       flex-direction: column;
