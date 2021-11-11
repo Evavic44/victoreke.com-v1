@@ -68,7 +68,7 @@
   border-radius: 1px;
   cursor: pointer;
   position: relative;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -84,36 +84,35 @@
   transform: translateX(5px);
 }
 
-/* Project Buttons */
-.btn-one, 
+/* CTA project Buttons */
+.btn-one,
 .btn-two,
 .btn-three,
 .btn-four,
-.btn-five
- {
-   background: var(--bg-primary-color);
-   color: var(--text-primary-color);
+.btn-five {
+  background: var(--bg-primary-color);
+  color: var(--text-primary-color);
 }
 
 .btn-one:hover {
-   background: #f0d107;
-   color: #000;
+  background: #f0d107;
+  color: #000;
 }
 .btn-two:hover {
-   background: orangered;
-   color: #fff;
+  background: orangered;
+  color: #fff;
 }
 .btn-three:hover {
-   background: #e22439;
-   color: #fff;
+  background: #e22439;
+  color: #fff;
 }
 .btn-four:hover {
-   background: #3cce96;
-   color: #fff;
+  background: #3cce96;
+  color: #fff;
 }
 .btn-five:hover {
-   background: #0073E0;
-   color: #fff;
+  background: #0073e0;
+  color: #fff;
 }
 
 .icons a,
@@ -281,5 +280,15 @@ input:checked + .slider:before {
     display: block;
     padding: 1rem;
     width: 100%;
+  }
+
+  /* CTA project buttons */
+  .btn-one,
+  .btn-two,
+  .btn-three,
+  .btn-four,
+  .btn-five {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.9rem;
   }
 }
