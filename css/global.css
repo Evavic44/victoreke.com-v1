@@ -27,6 +27,11 @@
   font-weight: 800;
 }
 
+.language {
+  font-family: monospace;
+  list-style: disc;
+}
+
 .underline {
   display: inline-block;
   width: 50px;

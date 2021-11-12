@@ -174,21 +174,6 @@ h4 {
   animation: animation 4s infinite alternate-reverse forwards ease-in-out;
 }
 
-/* Hero circle secondary*/
-#hero::before {
-  content: "";
-  position: absolute;
-  top: 90px;
-  left: 150px;
-  background-color: var(--secondary-color);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  z-index: -2;
-  transition: 0.5s;
-  animation: animation 4s infinite alternate-reverse forwards ease-in-out;
-}
-
 #hero .content {
   display: flex;
   align-items: center;
@@ -277,18 +262,33 @@ h4 {
 
 /* About */
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  background: var(--bg-secondary-color);
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 
-.about {
-  background-color: var(--bg-secondary-color);
-  padding: 1rem;
+#about a {
+  text-decoration: underline;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
+  padding: 0 1.5rem;
   height: 100%;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  max-width: 1000px;
+}
+
+.bio ul {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
 }
 
 /* Skills Section */
@@ -908,7 +908,7 @@ h4 {
   }
 
   .content h2 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
 
   .content p {
@@ -946,17 +946,6 @@ h4 {
     margin: 1rem 0;
   }
 
-  .bio {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-
-  .bio-stats {
-    width: 100%;
-  }
-
   .skills .box-header {
     transform: translateY(-50px);
     padding-bottom: 0;
@@ -977,10 +966,6 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .bio-stats p {
-    max-width: 500px;
-  }
-
   .skills .box-container {
     grid-template-columns: 1fr;
   }
@@ -990,20 +975,16 @@ h4 {
   }
 }
 
-@media (max-width: 499px) and (max-width: 320px) {
+@media (max-width: 400px) {
   #hero {
-    height: 100vh;
+    height: 100%;
   }
 
-  .content .content-image {
-    display: none;
+  .content h1 {
+    font-size: 0.8rem;
   }
 
-  .content .content-text h2 {
-    font-size: 2.1rem;
-  }
-
-  .content .content-text p {
-    font-size: 0.9rem;
+  .content h2 {
+    font-size: 1.3rem;
   }
 }
