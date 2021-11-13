@@ -123,7 +123,7 @@
 .icons a,
 .icons .icon {
   font-size: 1.7rem;
-  margin: 10px 15px;
+  margin: 10px 30px;
   padding: 12px 10px;
   width: 50px;
   height: 50px;
@@ -274,7 +274,7 @@ input:checked + .slider:before {
   }
 
   .icons a,
-  .icons span {
+  .icons .icon {
     font-size: 1.3rem;
     margin: 12px;
     height: 45px;

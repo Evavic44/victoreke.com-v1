@@ -933,13 +933,6 @@ h4 {
   .content .content-image {
     margin-top: 1rem;
   }
-
-  .icons span {
-    font-size: 1rem;
-    margin: 10px;
-    width: 40px;
-    height: 0px;
-  }
 }
 
 @media (max-width: 700px) {
