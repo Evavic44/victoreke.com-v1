@@ -174,11 +174,11 @@
 /* Hero Animation */
 @keyframes anime-2 {
   0% {
-    transform: rotate(10deg);
+    transform: rotate(5deg);
   }
 
   50% {
-    transform: rotate(-10deg);
+    transform: rotate(-5deg);
   }
 
   100% {
@@ -188,7 +188,7 @@
 
 .content .content-image {
   position: relative;
-  animation: anime-2 1.5s 6 alternate-reverse forwards ease-in-out;
+  animation: anime-2 1.5s infinite alternate-reverse forwards ease-in-out;
 }
 
 /* -------- Animation Ends Here ----------- */
