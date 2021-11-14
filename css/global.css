@@ -121,9 +121,9 @@
 }
 
 .icons a,
-.icons span {
-  font-size: 1.6rem;
-  margin: 10px 30px;
+.icons .icon {
+  font-size: 1.7rem;
+  margin: 10px 15px;
   padding: 12px 10px;
   width: 50px;
   height: 50px;
