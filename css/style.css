@@ -94,12 +94,16 @@ h4 {
 }
 
 .navbar ul li a {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: 0.75rem;
-  font-weight: 800;
   margin: 0 30px;
   transition: all 0.3s ease-in-out;
   padding: 20px;
+}
+
+.navbar ul li a .nav-icon {
+  margin-right: 0.4rem;
 }
 
 .navbar ul li a:hover {
@@ -154,6 +158,20 @@ h4 {
   background-color: var(--primary-color);
   width: 300px;
   height: 300px;
+  border-radius: 50%;
+  z-index: -2;
+  transition: 0.5s;
+}
+
+/* Hero circle 2*/
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 150px;
+  background-color: var(--color-2);
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   z-index: -2;
   transition: 0.5s;
@@ -246,7 +264,7 @@ h4 {
 
 /* About */
 #about {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
 .about {
@@ -256,45 +274,8 @@ h4 {
 
 .bio {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.bio .experience h1 {
-  font-weight: 900;
-  font-size: 7rem;
-}
-
-.bio .experience p {
-  font-weight: 700;
-  font-size: 1rem;
-  max-width: 150px;
-  margin: 0 auto 20px;
-}
-
-.bio-stats {
-  max-width: 700px;
-  font-size: 1.07rem;
-  font-weight: 600;
-  text-align: center;
-  padding: 20px;
-}
-
-.bio-stats p {
-  font-weight: 300;
-  font-size: 1.02rem;
-  text-align: center;
-  line-height: 1.4;
-}
-
-.bio-stats a {
-  font-weight: 400;
-}
-
-.bio-stats p span {
-  margin: 5px;
+  flex-direction: column;
+  height: 100%;
 }
 
 /* Skills Section */
@@ -768,16 +749,6 @@ h4 {
   .project-content {
     grid-template-columns: 1fr;
   }
-
-  /* .project-content .project-image {
-      background-size: 100%;
-      height: 100%;
-      width: 100%;
-   } */
-
-  /* .project-content .project-image:hover {
-      background-position: 100%;
-   } */
 
   .card-content {
     display: flex;
