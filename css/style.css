@@ -54,6 +54,13 @@ body {
   src: local("Proxima"),
     url("/assets/font/ProximaNova-Regular.otf") format("truetype");
 }
+@font-face {
+  font-family: "Jetbrains";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Jetbrains"),
+    url("/assets/font/JetBrainsMono-Regular.woff2") format("truetype");
+}
 
 img {
   width: 100%;
@@ -78,8 +85,7 @@ h2,
 h3,
 h4 {
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navbar */
@@ -190,7 +196,6 @@ h4 {
 }
 
 .content h2 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   max-width: 800px;
   font-size: 2.8rem;
 }
@@ -287,6 +292,7 @@ h4 {
 }
 
 .bio ul {
+  list-style: disc;
   font-size: 1.2rem;
   margin-top: 1.5rem;
   padding-left: 2rem;
@@ -336,11 +342,6 @@ h4 {
 }
 
 /* Language Icons */
-.icons {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .icons .icon {
   font-size: 1.5rem;
 }
@@ -382,7 +383,7 @@ h4 {
 .project-content .project-image img {
   transform-origin: 0 0;
   transition: transform 2s, filter 2s ease-in-out;
-  filter: grayscale(100%);
+  filter: grayscale(30%);
 }
 
 .project-content .project-image:hover img {

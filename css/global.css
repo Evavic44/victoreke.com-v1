@@ -28,8 +28,8 @@
 }
 
 .language {
-  font-family: monospace;
-  list-style: disc;
+  font-family: "Jetbrains", monospace;
+  font-size: 0.8rem;
 }
 
 .underline {
@@ -275,10 +275,7 @@ input:checked + .slider:before {
 
   .icons a,
   .icons .icon {
-    font-size: 1.3rem;
-    margin: 12px;
-    height: 45px;
-    width: 45px;
+    margin: 10px;
   }
 
   .theme-switch-wrapper {
