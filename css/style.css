@@ -262,13 +262,33 @@ h4 {
 
 /* About */
 #about {
-  height: 100vh;
+  min-height: 100vh;
+  background: var(--bg-secondary-color);
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#about a {
+  text-decoration: underline;
 }
 
 .bio {
   display: flex;
   flex-direction: column;
+  padding: 0 1.5rem;
   height: 100%;
+}
+
+.bio p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  max-width: 1000px;
+}
+
+.bio ul {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
 }
 
 /* Skills Section */
@@ -946,10 +966,6 @@ h4 {
 }
 
 @media (max-width: 500px) {
-  .bio-stats p {
-    max-width: 500px;
-  }
-
   .skills .box-container {
     grid-template-columns: 1fr;
   }
