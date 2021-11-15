@@ -286,14 +286,14 @@ h4 {
 }
 
 .bio p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 1.5rem;
   max-width: 1000px;
 }
 
 .bio ul {
   list-style: disc;
-  font-size: 1.2rem;
+  font-size: 1em;
   margin-top: 1.5rem;
   padding-left: 2rem;
 }
@@ -383,7 +383,7 @@ h4 {
 .project-content .project-image img {
   transform-origin: 0 0;
   transition: transform 2s, filter 2s ease-in-out;
-  filter: grayscale(30%);
+  filter: grayscale(20%);
 }
 
 .project-content .project-image:hover img {
@@ -506,7 +506,6 @@ h4 {
 
 .form-page {
   align-self: center;
-  border: 1px solid var(--other-color);
   padding: 1rem 0;
 }
 
@@ -529,6 +528,7 @@ h4 {
 .form-group input,
 .form-group textarea,
 .form-group button {
+  font-family: "Proxima", sans-serif;
   display: block;
   color: var(--text-primary-color);
   width: 100%;
@@ -822,6 +822,10 @@ h4 {
   .project-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .navbar ul li a {
+    margin: 0;
+  }
 }
 
 /* Navbar */
@@ -840,10 +844,6 @@ h4 {
 
   .theme-switch-wrapper {
     order: 2;
-  }
-
-  .navbar ul li a {
-    margin: 0;
   }
 
   .navbar ul li a:hover {
