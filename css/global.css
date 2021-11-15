@@ -75,7 +75,7 @@
     linear-gradient(currentColor 0 0) 100% var(--p, 100%);
   background-size: var(--d, 0) 3px, 3px var(--d, 0);
   background-repeat: no-repeat;
-  background-color: var(--primary-color);
+  background-color: var(--bg-secondary-color);
   transition: 0.5s, background-position 0s 0.5s;
 }
 
