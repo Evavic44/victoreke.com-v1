@@ -67,18 +67,21 @@
 /* Buttons */
 .btn {
   display: inline-block;
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 1rem 1.75rem;
-  border-radius: 1px;
+  padding: 1rem 2rem;
   cursor: pointer;
-  position: relative;
-  transition: 0.3s ease-in-out;
+  background: linear-gradient(currentColor 0 0) var(--p, 100%) 0,
+    linear-gradient(currentColor 0 0) 0 var(--d, 0),
+    linear-gradient(currentColor 0 0) var(--d, 0) 100%,
+    linear-gradient(currentColor 0 0) 100% var(--p, 100%);
+  background-size: var(--d, 0) 3px, 3px var(--d, 0);
+  background-repeat: no-repeat;
+  background-color: var(--primary-color);
+  transition: 0.5s, background-position 0s 0.5s;
 }
 
 .btn:hover {
-  background: #fff;
-  color: var(--primary-color);
+  --d: 100%;
+  --p: 0%;
 }
 
 .btn:hover span {
@@ -95,6 +98,8 @@
 .btn-three,
 .btn-four,
 .btn-five {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
   background: var(--bg-primary-color);
   color: var(--text-primary-color);
 }
