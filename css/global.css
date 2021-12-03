@@ -105,22 +105,27 @@
 }
 
 .btn-one:hover {
+  background: #2962ff;
+  color: #fff;
+}
+
+.btn-two:hover {
   background: #f0d107;
   color: #000;
 }
-.btn-two:hover {
+.btn-three:hover {
   background: orangered;
   color: #fff;
 }
-.btn-three:hover {
+.btn-four:hover {
   background: #e22439;
   color: #fff;
 }
-.btn-four:hover {
+.btn-five:hover {
   background: #3cce96;
   color: #fff;
 }
-.btn-five:hover {
+.btn-six:hover {
   background: #0073e0;
   color: #fff;
 }
