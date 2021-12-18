@@ -32,6 +32,10 @@
   --rotate-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Reset */
 * {
   margin: 0;
