@@ -57,6 +57,7 @@ body {
   font-weight: normal;
   src: local("Proxima"),
     url("/assets/font/ProximaNova-Regular.otf") format("truetype");
+  font-display: swap;
 }
 @font-face {
   font-family: "Jetbrains";
